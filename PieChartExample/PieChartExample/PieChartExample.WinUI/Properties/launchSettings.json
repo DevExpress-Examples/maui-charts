@@ -1,7 +1,0 @@
-{
-  "profiles": {
-    "PieChartExample.WinUI": {
-      "commandName": "AppContainer"
-    }
-  }
-}

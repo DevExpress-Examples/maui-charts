@@ -1,4 +1,4 @@
 Examples:
 
-- [Pie Chart](./CS/PieChartViewExample)  
+- [Pie Chart](./CS/PieChartExample)  
 - [Cartesian Chart](./CS/ChartViewExample)  

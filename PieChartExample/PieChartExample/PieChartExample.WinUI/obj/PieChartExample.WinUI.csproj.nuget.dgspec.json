@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Work\\MAUI\\PieChartExample\\PieChartExample\\PieChartExample.WinUI\\PieChartExample.WinUI.csproj": {}
+  },
+  "projects": {
+    "C:\\Work\\MAUI\\PieChartExample\\PieChartExample\\PieChartExample.WinUI\\PieChartExample.WinUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\MAUI\\PieChartExample\\PieChartExample\\PieChartExample.WinUI\\PieChartExample.WinUI.csproj",
+        "projectName": "PieChartExample.WinUI",
+        "projectPath": "C:\\Work\\MAUI\\PieChartExample\\PieChartExample\\PieChartExample.WinUI\\PieChartExample.WinUI.csproj",
+        "packagesPath": "C:\\Users\\dvoryadkina.elena\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\MAUI\\PieChartExample\\PieChartExample\\PieChartExample.WinUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dvoryadkina.elena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows10.0.19041"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/AUQ1gI1HHYnTfhpEzhY5EUhlyMikwi5itHqhmX23euibIPCYxJ/api": {},
+          "https://nuget.devexpress.com/rXg7tDMXISNCLBF8txbeZdQWdgetmsHx3DgajK7pPgb4NMEJ1D/api": {}
+        },
+        "frameworks": {
+          "net6.0-windows10.0.19041": {
+            "targetAlias": "net6.0-windows10.0.19041",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows10.0.19041": {
+          "targetAlias": "net6.0-windows10.0.19041",
+          "dependencies": {
+            "Microsoft.Maui": {
+              "target": "Package",
+              "version": "[6.0.100-preview.5.794, )"
+            },
+            "Microsoft.ProjectReunion": {
+              "target": "Package",
+              "version": "[0.8.0-preview, )"
+            },
+            "Microsoft.ProjectReunion.Foundation": {
+              "target": "Package",
+              "version": "[0.8.0-preview, )"
+            },
+            "Microsoft.ProjectReunion.WinUI": {
+              "target": "Package",
+              "version": "[0.8.0-preview, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.16, 10.0.19041.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win10-arm64": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "ChartViewExample.WinUI": {
+      "commandName": "AppContainer"
+    }
+  }
+}

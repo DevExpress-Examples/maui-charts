@@ -3,32 +3,10 @@
              x:Class="PieChartExample.MainPage"
              xmlns:local="clr-namespace:PieChartExample"
              xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts">
-    <ContentPage.Resources>
-        <dxc:LegendStyle x:Key="legendStyle" BorderColor="LightGray" BorderThickness="1"
-                            BackgroundColor="#424651"
-                            MarkerSize="18" TextIndent="6"
-                            ItemsVerticalIndent="12">
-            <dxc:LegendStyle.TextStyle>
-                <dxc:TextStyle Color="White" Size="12"/>
-            </dxc:LegendStyle.TextStyle>
-        </dxc:LegendStyle>
-    </ContentPage.Resources>
-    <dxc:PieChartView x:Name="PieChartView"
-                      SelectionBehavior="Hatch">
-        <dxc:PieChartView.Triggers>
-            <DataTrigger TargetType="dxc:PieChartView"
-                                     Binding="{Binding IsLandscape}"
-                                     Value="true">
-                <Setter Property="Legend">
-                    <Setter.Value>
-                        <dxc:Legend Orientation="TopToBottom"
-                                    VerticalPosition="Center"
-                                    HorizontalPosition="RightOutside"
-                                    Style="{StaticResource legendStyle}"/>
-                    </Setter.Value>
-                </Setter>
-            </DataTrigger>
-        </dxc:PieChartView.Triggers>
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <dxc:PieChartView SelectionBehavior="Hatch">
         <dxc:PieChartView.Series>
             <dxc:DonutSeries>
                 <dxc:DonutSeries.Data>
@@ -58,9 +36,18 @@
         </dxc:PieChartView.ChartStyle>
         <dxc:PieChartView.Legend>
             <dxc:Legend Orientation="TopToBottom"
-                    HorizontalPosition="Center"
-                    VerticalPosition="BottomOutside"
-                    Style="{StaticResource legendStyle}">
+                        HorizontalPosition="RightOutside"
+                        VerticalPosition="Center">
+                <dxc:Legend.Style>
+                    <dxc:LegendStyle BorderColor="LightGray" BorderThickness="1"
+                             BackgroundColor="#424651"
+                             MarkerSize="18" TextIndent="6"
+                             ItemsVerticalIndent="12">
+                        <dxc:LegendStyle.TextStyle>
+                            <dxc:TextStyle Color="White" Size="12"/>
+                        </dxc:LegendStyle.TextStyle>
+                    </dxc:LegendStyle>
+                </dxc:Legend.Style>
             </dxc:Legend>
         </dxc:PieChartView.Legend>
         <dxc:PieChartView.Hint>

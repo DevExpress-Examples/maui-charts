@@ -1,25 +1,35 @@
-﻿using Microsoft.Maui.Graphics;
+﻿using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
 using System.Collections.Generic;
 
 namespace PieChartExample {
-    class ViewModel {
+    class ViewModel : BindableObject {
+        public static readonly BindablePropertyKey IsLandscapePropertyKey = BindableProperty.CreateReadOnly("IsLandscape", typeof(bool), typeof(Panel), false);
+        public static BindableProperty IsLandscapeProperty = IsLandscapePropertyKey.BindableProperty;
+
+        public bool IsLandscape => (bool) GetValue(IsLandscapeProperty);
+         
         public IReadOnlyList<LandAreaItem> LandAreas { get; }
         readonly Color[] palette;
         public Color[] Palette => palette;
 
         public ViewModel() {
             LandAreas = new List<LandAreaItem>() {
-            new LandAreaItem("Russia", 17.098),
-            new LandAreaItem("Canada", 9.985),
-            new LandAreaItem("People's Republic of China", 9.597),
-            new LandAreaItem("United States of America", 9.834),
-            new LandAreaItem("Brazil", 8.516),
-            new LandAreaItem("Australia", 7.692),
-            new LandAreaItem("India", 3.287),
-            new LandAreaItem("Others", 81.2)
-        };
+                new LandAreaItem("Russia", 17.098),
+                new LandAreaItem("Canada", 9.985),
+                new LandAreaItem("People's Republic of China", 9.597),
+                new LandAreaItem("United States of America", 9.834),
+                new LandAreaItem("Brazil", 8.516),
+                new LandAreaItem("Australia", 7.692),
+                new LandAreaItem("India", 3.287),
+                new LandAreaItem("Others", 81.2)
+            };
             palette = PaletteLoader.LoadPalette("#975ba5", "#03bfc1", "#f8c855", "#f45a4e",
                                             "#496cbe", "#f58f35", "#d293fd", "#25a966");
+        }
+
+        public void UpdateOrientation(bool isLandscape) {
+            SetValue(IsLandscapePropertyKey, isLandscape);
         }
     }
 

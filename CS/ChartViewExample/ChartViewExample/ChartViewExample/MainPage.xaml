@@ -6,13 +6,13 @@
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-<ContentPage.Resources>
-    <dxc:SeriesCrosshairOptions x:Key="lineSeriesHintOptions"
-                                PointTextPattern="{}{S}: {V}M"
-                                ShowInLabel="True"
-                                AxisLabelVisible="True"
-                                AxisLineVisible="True"/>
-</ContentPage.Resources>
+    <ContentPage.Resources>
+        <dxc:SeriesCrosshairOptions x:Key="lineSeriesHintOptions"
+                                    PointTextPattern="{}{S}: {V}M"
+                                    ShowInLabel="True"
+                                    AxisLabelVisible="True"
+                                    AxisLineVisible="True"/>
+    </ContentPage.Resources>
     <dxc:ChartView>
         <dxc:ChartView.Series>
             <dxc:LineSeries DisplayName="{Binding GdpValueForUSA.CountryName}"
@@ -25,23 +25,23 @@
                 </dxc:LineSeries.Data>
             </dxc:LineSeries>
 
-<dxc:LineSeries DisplayName="{Binding GdpValueForChina.CountryName}"
-                HintOptions="{StaticResource lineSeriesHintOptions}"
-                MarkersVisible="True">
-    <dxc:LineSeries.Data>
-        <dxc:SeriesDataAdapter DataSource="{Binding GdpValueForChina.Values}"
-                                ArgumentDataMember="Year">
-            <dxc:ValueDataMember Type="Value" Member="Value"/>
-        </dxc:SeriesDataAdapter>
-    </dxc:LineSeries.Data>
-    <dxc:LineSeries.Style>
-        <dxc:LineSeriesStyle Stroke="#7145a7" StrokeThickness="2" MarkerSize="8">
-            <dxc:LineSeriesStyle.MarkerStyle>
-                <dxc:MarkerStyle Fill="#7145a7"/>
-            </dxc:LineSeriesStyle.MarkerStyle>
-        </dxc:LineSeriesStyle>
-    </dxc:LineSeries.Style>
-</dxc:LineSeries>
+            <dxc:LineSeries DisplayName="{Binding GdpValueForChina.CountryName}"
+                            HintOptions="{StaticResource lineSeriesHintOptions}"
+                            MarkersVisible="True">
+                <dxc:LineSeries.Data>
+                    <dxc:SeriesDataAdapter DataSource="{Binding GdpValueForChina.Values}"
+                                            ArgumentDataMember="Year">
+                        <dxc:ValueDataMember Type="Value" Member="Value"/>
+                    </dxc:SeriesDataAdapter>
+                </dxc:LineSeries.Data>
+                <dxc:LineSeries.Style>
+                    <dxc:LineSeriesStyle Stroke="#7145a7" StrokeThickness="2" MarkerSize="8">
+                        <dxc:LineSeriesStyle.MarkerStyle>
+                            <dxc:MarkerStyle Fill="#7145a7"/>
+                        </dxc:LineSeriesStyle.MarkerStyle>
+                    </dxc:LineSeriesStyle>
+                </dxc:LineSeries.Style>
+            </dxc:LineSeries>
 
             <dxc:LineSeries DisplayName="{Binding GdpValueForJapan.CountryName}"
                             HintOptions="{StaticResource lineSeriesHintOptions}">

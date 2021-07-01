@@ -9,9 +9,7 @@ namespace PieChartExample {
 			appBuilder
 				.ConfigureMauiHandlers((_, handlers) => handlers.AddHandler<PieChartView, PieChartViewHandler>())
 				.UseMauiApp<App>()
-				.ConfigureFonts(fonts => {
-					fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				});
+				.ConfigureFonts(fonts => fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"));
 		}
 	}
 }

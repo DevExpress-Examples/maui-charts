@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31220.234
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChartViewExample", "..\ChartViewExample\ChartViewExample\ChartViewExample\ChartViewExample.csproj", "{1A13B153-3149-4A65-8238-E853420D8093}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChartViewExample", "ChartViewExample\ChartViewExample\ChartViewExample\ChartViewExample.csproj", "{1A13B153-3149-4A65-8238-E853420D8093}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PieChartExample", "..\PieChartExample\PieChartExample\PieChartExample\PieChartExample.csproj", "{2351C672-89A1-49E2-82BB-23A0A1C60B52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PieChartExample", "PieChartExample\PieChartExample\PieChartExample\PieChartExample.csproj", "{2351C672-89A1-49E2-82BB-23A0A1C60B52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

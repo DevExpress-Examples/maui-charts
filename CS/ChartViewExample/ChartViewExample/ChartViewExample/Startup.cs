@@ -10,7 +10,7 @@ namespace ChartViewExample
 		public void Configure(IAppHostBuilder appBuilder)
 		{
 			appBuilder
-				.ConfigureMauiHandlers((_, handlers) => handlers.AddHandler<ChartView, ChartHandler>())
+				.ConfigureMauiHandlers((_, handlers) => handlers.AddHandler<ChartView, ChartViewHandler>())
 				.UseMauiApp<App>()
 				.ConfigureFonts(fonts =>
 				{

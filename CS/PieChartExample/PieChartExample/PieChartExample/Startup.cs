@@ -7,7 +7,7 @@ namespace PieChartExample {
 	public class Startup : IStartup {
 		public void Configure(IAppHostBuilder appBuilder) {
 			appBuilder
-				.ConfigureMauiHandlers((_, handlers) => handlers.AddHandler<PieChartView, PieChartHandler>())
+				.ConfigureMauiHandlers((_, handlers) => handlers.AddHandler<PieChartView, PieChartViewHandler>())
 				.UseMauiApp<App>()
 				.ConfigureFonts(fonts => {
 					fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

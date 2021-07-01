@@ -39,7 +39,7 @@ using Microsoft.Maui.Hosting;
 using Microsoft.Maui.Controls.Hosting;
 using DevExpress.Maui.Charts;
 
-namespace PieChartExample {
+namespace ChartViewExample {
 	public class Startup : IStartup {
 		public void Configure(IAppHostBuilder appBuilder) {
 			appBuilder

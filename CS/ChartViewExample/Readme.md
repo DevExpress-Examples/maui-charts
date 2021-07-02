@@ -18,6 +18,8 @@ Open the solution in Visual Studio 16.11 Preview 2 and restore NuGet packages to
 2. Register the DevExpress NuGet feed as a package source.
 3. Restore all NuGet packages for the solution.
 
+Run the application on an Android device or emulator.
+
 <img src="./img/devexpress-maui-chart-view.png"/>
 
 The following step-by-step instructions describe how to create the same application:

@@ -16,6 +16,8 @@ Open the solution in Visual Studio 16.11 Preview 2 and restore NuGet packages to
 2. Register the DevExpress NuGet feed as a package source.
 3. Restore all NuGet packages for the solution.
 
+Run the application on an Android device or emulator in portrait orientation.
+
 <img src="./img/devexpress-maui-pie-chart.png"/>
 
 The following step-by-step instructions describe how to create the same application.
@@ -23,7 +25,7 @@ The following step-by-step instructions describe how to create the same applicat
 ## Create a New MAUI Application and Add a Pie Chart
 
 Create a new .NET MAUI solution in Visual Studio 16.11 Preview 2.  
-Refer to the [Microsoft documentation](https://docs.microsoft.com/en-gb/dotnet/maui/) for more information on how to get started with .NET MAUI.
+Refer to the following Microsoft documentation for more information on how to get started with .NET MAUI: [.NET Multi-platform App UI](https://docs.microsoft.com/en-gb/dotnet/maui/).
 
 Add the DevExpress Charts component to your solution as follows: 
 1. [Obtain your NuGet feed URL](http://docs.devexpress.com/GeneralInformation/116042/installation/install-devexpress-controls-using-nuget-packages/obtain-your-nuget-feed-url).
@@ -132,8 +134,8 @@ Create a **Legend** object, modify its settings, and assign it to the **PieChart
     <!--...-->
     <dxc:PieChartView.Legend>
         <dxc:Legend Orientation="TopToBottom"
-                    HorizontalPosition="RightOutside"
-                    VerticalPosition="Center"/>
+                    HorizontalPosition="Center"
+                    VerticalPosition="BottomOutside"/>
     </dxc:PieChartView.Legend>
 </dxc:PieChartView>
 ```

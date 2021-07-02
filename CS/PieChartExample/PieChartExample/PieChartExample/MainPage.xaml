@@ -36,8 +36,8 @@
         </dxc:PieChartView.ChartStyle>
         <dxc:PieChartView.Legend>
             <dxc:Legend Orientation="TopToBottom"
-                        HorizontalPosition="RightOutside"
-                        VerticalPosition="Center">
+                        HorizontalPosition="Center"
+                        VerticalPosition="BottomOutside">
                 <dxc:Legend.Style>
                     <dxc:LegendStyle BorderColor="LightGray" BorderThickness="1"
                              BackgroundColor="#424651"

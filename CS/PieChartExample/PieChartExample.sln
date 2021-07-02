@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31220.234
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PieChartExample", "PieChartExample\PieChartExample\PieChartExample.csproj", "{C5ED28B8-3C86-46CA-99D6-AC848A69B168}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PieChartExample.WinUI", "PieChartExample\PieChartExample.WinUI\PieChartExample.WinUI.csproj", "{5491052A-F3FA-491E-983E-1F93AF757CB5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

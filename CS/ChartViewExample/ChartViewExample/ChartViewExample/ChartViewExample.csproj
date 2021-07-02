@@ -33,6 +33,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="DevExpress.Maui.Charts" Version="21.2.1-pre-21182" />
+		<PackageReference Include="DevExpress.Maui.Core" Version="21.2.1-pre-21182" />
 		<PackageReference Include="Microsoft.Maui" Version="6.0.100-preview.5.794" />
 	</ItemGroup>
 
@@ -41,17 +43,6 @@
 	</PropertyGroup>
 	<ItemGroup Condition="$(TargetFramework.Contains('-android'))">
 		<AndroidEnvironment Include="Android\AndroidEnvironment.txt" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Reference Include="DevExpress.Maui.Android.Charts">
-	    <HintPath>..\..\..\dlls\DevExpress.Maui.Android.Charts.dll</HintPath>
-	  </Reference>
-	  <Reference Include="DevExpress.Maui.Charts">
-	    <HintPath>..\..\..\dlls\DevExpress.Maui.Charts.dll</HintPath>
-	  </Reference>
-	  <Reference Include="DevExpress.Maui.Core">
-	    <HintPath>..\..\..\dlls\DevExpress.Maui.Core.dll</HintPath>
-	  </Reference>
 	</ItemGroup>
 
 </Project>

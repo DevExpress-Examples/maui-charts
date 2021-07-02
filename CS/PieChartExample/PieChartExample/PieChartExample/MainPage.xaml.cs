@@ -2,16 +2,10 @@
 using System.Collections.Generic;
 using Microsoft.Maui.Controls;
 
-namespace PieChartExample
-{
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
+namespace PieChartExample {
+	public partial class MainPage : ContentPage {
+		public MainPage() {
 			InitializeComponent();
 		}
-
 	}
-
-
 }

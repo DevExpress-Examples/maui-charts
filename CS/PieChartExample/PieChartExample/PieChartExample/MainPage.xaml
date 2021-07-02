@@ -40,9 +40,9 @@
                         VerticalPosition="BottomOutside">
                 <dxc:Legend.Style>
                     <dxc:LegendStyle BorderColor="LightGray" BorderThickness="1"
-                             BackgroundColor="#424651"
-                             MarkerSize="18" TextIndent="6"
-                             ItemsVerticalIndent="12">
+                                     BackgroundColor="#424651"
+                                     MarkerSize="18" TextIndent="6"
+                                     ItemsVerticalIndent="12">
                         <dxc:LegendStyle.TextStyle>
                             <dxc:TextStyle Color="White" Size="12"/>
                         </dxc:LegendStyle.TextStyle>

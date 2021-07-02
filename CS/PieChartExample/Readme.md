@@ -8,7 +8,9 @@
 
 # DevExpress Pie Chart for .NET MAUI
 
-This example allows you to get started with the DevExpress Pie Chart for .NET MAUI Preview 5 and explore its basic functionality.  
+The DevExpress Pie Chart for .NET MAUI Preview 5 visualizes data as a circle chart divided into slices to illustrate numerical proportion.
+
+This example allows you to get started with the PieChartView component and explore its basic functionality.  
 
 Open the solution in Visual Studio 16.11 Preview 2 and restore NuGet packages to run the application:
 

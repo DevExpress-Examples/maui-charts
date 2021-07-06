@@ -15,14 +15,14 @@ This example allows you to get started with the ChartView component and explore 
 1. Install a [.NET MAUI development](https://docs.microsoft.com/en-gb/dotnet/maui/get-started/installation) environment and open the solution in Visual Studio 16.11 Preview 2.
 2. Download a free copy of DevExpress Xamarin.Forms and MAUI Controls from https://www.devexpress.com/xamarin-free.
 3. [Obtain your NuGet feed URL](http://docs.devexpress.com/GeneralInformation/116042/installation/install-devexpress-controls-using-nuget-packages/obtain-your-nuget-feed-url).
-4. Register the DevExpress NuGet feed as a package source.
+4. Register the DevExpress NuGet feed as a package source in Visual Studio.
 5. Restore all NuGet packages for the solution.
 6. Run the application on an Android device or emulator.  
 	If the application starts and then stops in a few seconds, disable the Hot Reload option (the *Options* | *Debugging* | *Hot Reload* | *Enable XAML Hot Reload* checkbox in Visual Studio).
 
 <img src="./img/devexpress-maui-chart-view.png"/>
 
-The following step-by-step instructions describe how to create the same application:
+The following step-by-step instructions describe how to create the same application.
 ## Create a New MAUI Application and Add a Chart
 
 Create a new .NET MAUI solution in Visual Studio 16.11 Preview 2.  
@@ -30,9 +30,9 @@ Refer to the following Microsoft topic for more information on how to get starte
 
 Add the DevExpress Charts component to your solution as follows: 
 1. Download a free copy of DevExpress Xamarin.Forms and MAUI Controls from https://www.devexpress.com/xamarin-free.
-2. Obtain your NuGet feed URL.
-3. Register the DevExpress NuGet feed as a package source. 
-4. Install the **DevExpress.MAUI.Charts** package from the DevExpress NuGet feed.
+2. [Obtain your NuGet feed URL](http://docs.devexpress.com/GeneralInformation/116042/installation/install-devexpress-controls-using-nuget-packages/obtain-your-nuget-feed-url).
+3. Register the DevExpress NuGet feed as a package source in Visual Studio. 
+4. Install the **DevExpress.Maui.Charts** package from the DevExpress NuGet feed.
 
 In the *Startup.cs* file, register a handler for the DevExpress ChartView:
 

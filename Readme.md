@@ -14,7 +14,7 @@ The [ChartView](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartVie
 
 ## Prerequisites
 
-1. Install Visual Studio 2022 Preview and .NET 6 Preview 6. See the following topic on docs.microsoft.com for more information: [.NET MAUI Installation](https://docs.microsoft.com/en-gb/dotnet/maui/get-started/installation).
+1. Install Visual Studio 2022 and the latest .NET MAUI version. See the following topic on docs.microsoft.com for more information: [.NET MAUI Installation](https://docs.microsoft.com/en-gb/dotnet/maui/get-started/installation).
 1. Register the following NuGet feed in Visual Studio: **https://nuget.devexpress.com/free/api**.
     > If you are an active [DevExpress Universal](https://www.devexpress.com/subscriptions/universal.xml) customer, DevExpress Controls for .NET MAUI are available in your [personal NuGet feed](https://nuget.devexpress.com/).
 
@@ -30,7 +30,7 @@ The step-by-step instructions below describe how to create an application simila
 
 ### Create a New Project
 
-1. In Visual Studio 2022 Preview, create a new .NET MAUI project. Name it *ChartViewExample*.
+1. In Visual Studio 2022, create a new .NET MAUI project. Name it *ChartViewExample*.
     > If the wizard does not propose a template for .NET MAUI projects, you can call the following command in a CLI to create a new .NET MAUI project:
     > ```
     > dotnet new maui -n ChartViewExample

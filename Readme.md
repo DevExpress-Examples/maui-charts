@@ -76,8 +76,7 @@ In the *MainPage.xaml* file, use the *dxc* prefix to declare the **DevExpress.Ma
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChartViewExample.MainPage"
              xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts">
-    <dxc:ChartView>
-    </dxc:ChartView>
+    <dxc:ChartView/>
 </ContentPage>
 ```
 

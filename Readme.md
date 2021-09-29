@@ -6,7 +6,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Startup.cs](./CS/ScatterChartGetStarted/Startup.cs)
+* [MauiProgram.cs](./CS/ScatterChartGetStarted/MauiProgram.cs)
 * [MainPage.xaml](./CS/ScatterChartGetStarted/MainPage.xaml)
 * [ViewModel.cs](./CS/ScatterChartGetStarted/ViewModel.cs)
 <!-- default file list end -->

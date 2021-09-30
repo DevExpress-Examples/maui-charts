@@ -5,17 +5,21 @@ using DevExpress.Maui.Charts;
 
 namespace ScatterChartGetStarted
 {
-	public class Startup : IStartup
+	public static class MauiProgram
 	{
-		public void Configure(IAppHostBuilder appBuilder)
+		public static MauiApp CreateMauiApp()
 		{
-			appBuilder
-				.ConfigureMauiHandlers((_, handlers) => 
-				handlers.AddHandler<ChartView, ChartViewHandler>())
+			var builder = MauiApp.CreateBuilder();
+			builder
 				.UseMauiApp<App>()
+				.ConfigureMauiHandlers((handlers) => {
+					handlers.AddHandler<ChartView, ChartViewHandler>();
+				})
 				.ConfigureFonts(fonts => {
 					fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				});
+
+			return builder.Build();
 		}
 	}
 }

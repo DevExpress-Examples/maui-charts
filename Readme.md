@@ -6,7 +6,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [Startup.cs](./CS/ScatterChartGetStarted/Startup.cs)
+* [MauiProgram.cs](./CS/ScatterChartGetStarted/MauiProgram.cs)
 * [MainPage.xaml](./CS/ScatterChartGetStarted/MainPage.xaml)
 * [ViewModel.cs](./CS/ScatterChartGetStarted/ViewModel.cs)
 <!-- default file list end -->
@@ -45,7 +45,7 @@ The step-by-step instructions below describe how to create an application simila
 
 ### Add a Chart View to the Main Page
 
-In the *Startup.cs* file, register a handler for the DevExpress ChartView:
+In the *MauiProgram.cs* file, register a handler for the DevExpress ChartView:
 
 ```cs
 using Microsoft.Maui;
@@ -53,15 +53,19 @@ using Microsoft.Maui.Hosting;
 using Microsoft.Maui.Controls.Hosting;
 using DevExpress.Maui.Charts;
 
-namespace ChartViewExample {
-    public class Startup : IStartup {
-        public void Configure(IAppHostBuilder appBuilder) {
-            appBuilder
-                .ConfigureMauiHandlers((_, handlers) => handlers.AddHandler<ChartView, ChartViewHandler>())
+namespace ScatterChartGetStarted {
+    public static class MauiProgram {
+        public static MauiApp CreateMauiApp() {
+            var builder = MauiApp.CreateBuilder();
+            builder
                 .UseMauiApp<App>()
+                .ConfigureMauiHandlers((handlers) => {
+                    handlers.AddHandler<ChartView, ChartViewHandler>();
+                })
                 .ConfigureFonts(fonts => {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
+            return builder.Build();
         }
     }
 }
@@ -72,8 +76,7 @@ In the *MainPage.xaml* file, use the *dxc* prefix to declare the **DevExpress.Ma
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChartViewExample.MainPage"
              xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts">
-    <dxc:ChartView>
-    </dxc:ChartView>
+    <dxc:ChartView/>
 </ContentPage>
 ```
 

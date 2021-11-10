@@ -15,8 +15,7 @@
 		<ApplicationId>com.companyname.ScatterChartGetStarted</ApplicationId>
 
 		<!-- Versions -->
-		<ApplicationVersion>1.0</ApplicationVersion>
-		<AndroidVersionCode>1</AndroidVersionCode>
+		<ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -34,7 +33,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="DevExpress.Maui.Charts" Version="21.2.1-pre-*" />
+	  	<PackageReference Include="DevExpress.Maui.Charts" Version="22.1.1-pre-*" />
 	</ItemGroup>
 
 	<PropertyGroup>

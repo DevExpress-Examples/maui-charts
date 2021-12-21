@@ -68,7 +68,7 @@ The following step-by-step tutorial details how to reproduce this application.
     > ```
     > dotnet new maui -n ChartViewExample
     > ```
-1. Install the **DevExpress.Maui.Charts** package from this feed.
+1. Install the **DevExpress.Maui.Charts** package from the DevExpress NuGet Gallery.
 > DevExpress Pie Chart for .NET MAUI supports iOS and Android. The project should only contain these platforms.
 
 ### Add a Chart View to the Main Page

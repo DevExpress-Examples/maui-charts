@@ -73,8 +73,7 @@ The following step-by-step tutorial details how to reproduce this application.
 
 ### Add a Chart View to the Main Page
 
-In the *MauiProgram.cs* file, register a handler for the DevExpress ChartView:
-
+In the *MauiProgram.cs* file, call the **UseDevExpress** method to register a handler for the DevExpress ChartView:
 ```cs
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;

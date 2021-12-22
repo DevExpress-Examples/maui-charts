@@ -87,9 +87,7 @@ namespace ScatterChartGetStarted {
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
-                .ConfigureMauiHandlers((handlers) => {
-                    handlers.AddHandler<ChartView, ChartViewHandler>();
-                })
+                .UseDevExpress()
                 .ConfigureFonts(fonts => {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });

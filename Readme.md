@@ -51,7 +51,7 @@ The [ChartView](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartVie
 ## How to Run This Application
 
 1. Install Visual Studio 2022 and the latest .NET MAUI version. See the following topic on docs.microsoft.com for more information: [.NET MAUI Installation](https://docs.microsoft.com/en-gb/dotnet/maui/get-started/installation).
-1. Register the following NuGet feed in Visual Studio: `https://nuget.devexpress.com/free/api`.
+1. Register [your personal NuGet feed](https://nuget.devexpress.com/) in Visual Studio.
     > If you are an active [DevExpress Universal](https://www.devexpress.com/subscriptions/universal.xml) customer, DevExpress Controls for .NET MAUI are available in your [personal NuGet feed](https://nuget.devexpress.com/).
 
 ## How to Reproduce This Application

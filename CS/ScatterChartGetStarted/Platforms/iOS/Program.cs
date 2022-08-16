@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace ScatterChartGetStarted
+namespace ChartGetStarted
 {
 	public class Program
 	{

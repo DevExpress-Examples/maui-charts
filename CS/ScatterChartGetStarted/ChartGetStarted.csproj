@@ -6,13 +6,13 @@
 		<OutputType>Exe</OutputType>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
-		<RootNamespace>ScatterChartGetStarted</RootNamespace>
+		<RootNamespace>ChartGetStarted</RootNamespace>
 
 		<!-- Display name -->
-		<ApplicationTitle>ScatterChartGetStarted</ApplicationTitle>
+		<ApplicationTitle>ChartGetStarted</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.ScatterChartGetStarted</ApplicationId>
+		<ApplicationId>com.companyname.ChartGetStarted</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationVersion>1</ApplicationVersion>

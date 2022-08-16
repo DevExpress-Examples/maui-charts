@@ -4,7 +4,7 @@ using Microsoft.Maui.Controls.Hosting;
 using DevExpress.Maui.Charts;
 using DevExpress.Maui;
 
-namespace ScatterChartGetStarted
+namespace ChartGetStarted
 {
 	public static class MauiProgram
 	{

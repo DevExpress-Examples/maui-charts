@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Maui.Controls;
 
-namespace ScatterChartGetStarted
+namespace ChartGetStarted
 {
 	public partial class MainPage : ContentPage
 	{

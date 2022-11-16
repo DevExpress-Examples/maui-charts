@@ -3,7 +3,7 @@ using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;
 using Application = Microsoft.Maui.Controls.Application;
 
-namespace ScatterChartGetStarted
+namespace ChartGetStarted
 {
 	public partial class App : Application
 	{

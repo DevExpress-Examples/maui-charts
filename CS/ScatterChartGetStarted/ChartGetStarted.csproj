@@ -2,17 +2,17 @@
 
 	<PropertyGroup>
 		<!-- iOS, Android -->
-		<TargetFrameworks>net6.0-ios;net6.0-android</TargetFrameworks>
+		<TargetFrameworks>net7.0-ios;net7.0-android</TargetFrameworks>
 		<OutputType>Exe</OutputType>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
-		<RootNamespace>ScatterChartGetStarted</RootNamespace>
+		<RootNamespace>ChartGetStarted</RootNamespace>
 
 		<!-- Display name -->
-		<ApplicationTitle>ScatterChartGetStarted</ApplicationTitle>
+		<ApplicationTitle>ChartGetStarted</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.ScatterChartGetStarted</ApplicationId>
+		<ApplicationId>com.companyname.ChartGetStarted</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationVersion>1</ApplicationVersion>
@@ -31,9 +31,10 @@
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
 	</ItemGroup>
-
+             
 	<ItemGroup>
-	  	<PackageReference Include="DevExpress.Maui.Charts" Version="22.1.*" />
+	  <PackageReference Include="DevExpress.Maui.Charts" Version="22.2.2-beta" />
+	  <PackageReference Include="DevExpress.Data" Version="22.2.2-beta" />
 	</ItemGroup>
 
 	<PropertyGroup>

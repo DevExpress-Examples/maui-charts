@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ScatterChartGetStarted
+namespace ChartGetStarted
 {
     public class ViewModel
     {

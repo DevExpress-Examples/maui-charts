@@ -2,7 +2,7 @@ using Foundation;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace ScatterChartGetStarted
+namespace ChartGetStarted
 {
 	[Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate {

@@ -4,7 +4,7 @@ using Android.Runtime;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace ScatterChartGetStarted
+namespace ChartGetStarted
 {
 	[Application]
     public class MainApplication : MauiApplication {

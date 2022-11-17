@@ -2,7 +2,7 @@
 
 This example demonstrates how to use DevExpress Charts for .NET MAUI to show financial data.
 
-![](./img/financial-chart.png)
+![](financial-chart.png)
 
 ## Requirements
 

@@ -37,7 +37,7 @@ The following project describes how to change colors of Chart elements:
 * [Colorize Line Segment](./CS/LineSegmentColorizer)
 * [Colorize Value Range](./CS/ValueRangeColorizer)
 
-The [SeriesLabelTextProvider](./CS/SeriesLabelTextProvider) shows how to define custom labels for a series.
+The [SeriesLabelTextProvider](./CS/SeriesLabelTextProvider) example shows how to define custom labels for a series.
 
 ## Documentation
 

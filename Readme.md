@@ -5,11 +5,11 @@
 <!-- default badges end -->
 # DevExpress Charts for .NET MAUI
 
-[DevExpress Mobile UI](https://www.devexpress.com/maui/) allows you to use a .NET cross-platform UI toolkit and C# to build native apps for iOS and Android.
+The [DevExpress Mobile UI](https://www.devexpress.com/maui/) allows you to use a .NET cross-platform UI toolkit and C# to build native apps for iOS and Android.
 
 ![DevExpress Mobile UI for .NET MAUI](./img/maui.png)
 
-The **DevExpress Mobile UI for Xamarin.Forms and .NET MAUI** is free of charge. To learn more about our offer and to reserve your copy, visit [Free DevExpress Mobile UI for Xamarin.Forms and .NET MAUI](https://www.devexpress.com/xamarin-free).
+The **DevExpress Mobile UI for Xamarin.Forms and .NET MAUI** is free of charge. To learn more about our offer and to obtain your copy, visit [Free DevExpress Mobile UI for Xamarin.Forms and .NET MAUI](https://www.devexpress.com/xamarin-free).
 
 ## Requirements
 
@@ -25,7 +25,7 @@ This repository contains projects that allow you to display the following Chart 
 * [Pie Chart](./CS/PieChartGetStarted)
 * [Scatter Chart](./CS/ScatterChartGetStarted)
 
-You can also refer to the following YouTube video for instruction on how to get started with the Chart Controls: [Adding Charts to Your .NET MAUI App](https://www.youtube.com/watch?v=uvcMy2WP0_M).
+You can also refer to the following YouTube video for instructions on how to get started with the Chart Controls: [Adding Charts to Your .NET MAUI App](https://www.youtube.com/watch?v=uvcMy2WP0_M).
 
 The following project describes how to change colors of Chart elements:
 

@@ -5,11 +5,11 @@
 <!-- default badges end -->
 # DevExpress Pie Chart for .NET MAUI
 
-[DevExpress Mobile UI](https://www.devexpress.com/maui/) allows you to use a .NET cross-platform UI toolkit and C# to build native apps for iOS and Android.
+The [DevExpress Mobile UI](https://www.devexpress.com/maui/) allows you to use a .NET cross-platform UI toolkit and C# to build native apps for iOS and Android.
 
 ![DevExpress Mobile UI for .NET MAUI](../../img/maui.png)
 
-The **DevExpress Mobile UI for Xamarin.Forms and .NET MAUI** is free of charge. To learn more about our offer and to reserve your copy, visit [Free DevExpress Mobile UI for Xamarin.Forms and .NET MAUI](https://www.devexpress.com/xamarin-free).
+The **DevExpress Mobile UI for Xamarin.Forms and .NET MAUI** is free of charge. To learn more about our offer and to obtain your copy, visit [Free DevExpress Mobile UI for Xamarin.Forms and .NET MAUI](https://www.devexpress.com/xamarin-free).
 
 ## Requirements
 
@@ -50,7 +50,7 @@ The following step-by-step tutorial details how to reproduce this application.
     > ```
 1. Install the **DevExpress.Maui.Charts** package from this feed.
 
-> DevExpress Pie Chart for .NET MAUI supports iOS and Android. The project should only contain these platforms.
+> DevExpress Pie Chart for .NET MAUI supports iOS and Android. The project should contain only these platforms.
 
 ### Add a Pie Chart to the Main Page
 
@@ -256,7 +256,7 @@ Use the [PieChartView.SelectionBehavior](https://docs.devexpress.com/MAUI/DevExp
 </dxc:PieChartView>
 ```
 
-To change the legend appearance, set the [Legend.Style](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.Legend.Style) property to a [LegendStyle](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.LegendStyle) object, and specify this object's properties that customize the legend border, background and items:
+To change the legend appearance, set the [Legend.Style](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.Legend.Style) property to a [LegendStyle](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.LegendStyle) object, and specify this object's properties to customize the legend's border, background, and items:
 ```xaml
 <dxc:PieChartView.Legend>
     <dxc:Legend>

@@ -1,10 +1,10 @@
 # DevExpress Scatter Chart for .NET MAUI
 
-[DevExpress Mobile UI](https://www.devexpress.com/maui/) allows you to use a .NET cross-platform UI toolkit and C# to build native apps for iOS and Android.
+The [DevExpress Mobile UI](https://www.devexpress.com/maui/) allows you to use a .NET cross-platform UI toolkit and C# to build native apps for iOS and Android.
 
 ![DevExpress Mobile UI for .NET MAUI](../../img/maui.png)
 
-The **DevExpress Mobile UI for Xamarin.Forms and .NET MAUI** is free of charge. To learn more about our offer and to reserve your copy, visit [Free DevExpress Mobile UI for Xamarin.Forms and .NET MAUI](https://www.devexpress.com/xamarin-free).
+The **DevExpress Mobile UI for Xamarin.Forms and .NET MAUI** is free of charge. To learn more about our offer and to obtain your copy, visit [Free DevExpress Mobile UI for Xamarin.Forms and .NET MAUI](https://www.devexpress.com/xamarin-free).
 
 ## Requirements
 
@@ -18,7 +18,7 @@ The [ChartView](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartVie
 
 ![Chart View](img/devexpress-maui-chart-view.png)
 
-You can also refer to the following YouTube video for instruction on how to get started with the Chart Controls: [Adding Charts to Your .NET MAUI App](https://www.youtube.com/watch?v=uvcMy2WP0_M).
+You can also refer to the following YouTube video for instructions on how to get started with the Chart Controls: [Adding Charts to Your .NET MAUI App](https://www.youtube.com/watch?v=uvcMy2WP0_M).
 
 ### Files to Review
 
@@ -41,7 +41,7 @@ The following step-by-step tutorial details how to reproduce this application.
 ### Create a New Project
 
 1. In Visual Studio 2022, create a new .NET MAUI project. Name it *ChartViewExample*.
-    > If the wizard does not propose a template for .NET MAUI projects, you can call the following command in a CLI to create a new .NET MAUI project:
+    > If the wizard does not suggest a template for .NET MAUI projects, you can call the following command in a CLI to create a new .NET MAUI project:
     > ```
     > dotnet new maui -n ChartViewExample
     > ```

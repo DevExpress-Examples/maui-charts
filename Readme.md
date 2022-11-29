@@ -17,8 +17,8 @@ Please register the DevExpress NuGet Gallery in Visual Studio to restore the NuG
 
 You can also refer to the following YouTube videos for more information on how to get started with the DevExpress .NET MAUI Controls and DevExpress Chart Controls for MAUI: 
 
-* [Setting up a .NET MAUI Project](https://www.youtube.com/watch?v=juJvl5UicIQ).
-* [Adding Charts to Your .NET MAUI App](https://www.youtube.com/watch?v=uvcMy2WP0_M).
+* [Setting up a .NET MAUI Project](https://www.youtube.com/watch?v=juJvl5UicIQ)
+* [Adding Charts to Your .NET MAUI App](https://www.youtube.com/watch?v=uvcMy2WP0_M)
 
 ## What's in This Repository
 
@@ -33,12 +33,12 @@ This repository contains projects that allow you to create different charts.
 ### Paint Charts
 
 * [Fill Area Chart by Segments](./CS/AreaSegmentColorizer)
-* [Colorize Each Point](./CS/ColorEachPointColorizer)
-* [Colorize Custom Point](./CS/CustomPointColorizer)
-* [Colorize Custom Value Range](./CS/CustomValueRangeColorizer)
-* [Colorize Index-Based Custom Point](./CS/IndexBasedCustomPointColorizer)
-* [Colorize Line Segment](./CS/LineSegmentColorizer)
-* [Colorize Value Range](./CS/ValueRangeColorizer)
+* [Paint Points with Palette Colors](./CS/ColorEachPointColorizer)
+* [Color Points by Their Arguments](./CS/CustomPointColorizer)
+* [Paint Bubbles Based on Data Source Field Value Ranges](./CS/CustomValueRangeColorizer)
+* [Color Points Based on String Data Source Values](./CS/IndexBasedCustomPointColorizer)
+* [Colorize Line Segments](./CS/LineSegmentColorizer)
+* [Color Points by Their Values](./CS/ValueRangeColorizer)
 
 ### Configure Chart Elements
 

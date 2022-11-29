@@ -1,4 +1,4 @@
-# Predefined Value Range Colorizer
+# Color Points by Their Values
 
 In this example, the bar chart displays cryptocurrency portfolio yield. It colors series points red when their Y-axis values are between **-100** and **0**, and green when values are between **0** and **100**. Note that this chart diagram is [rotated](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView.Rotated?p=netframework). 
 

@@ -6,7 +6,7 @@ In this example, the area chart visualizes the visible light spectrum.
 
 Follow the steps below to show such a chart:
 
-* Add an [Area Series](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.AreaSeries) object to the [ChartView.Series](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView.Series) collection, and set its [Data](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.XYSeries.Data) property to bind the series to a data source.
+* Add an [Area Series](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.AreaSeries) object to the [ChartView.Series](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView.Series) collection, and specify its [Data](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.XYSeries.Data) property to bind the series to a data source.
 
 * Set the series' [FillColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.AreaSeries.FillColorizer) property to a [SegmentBasedFillColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.SegmentBasedFillColorizer) object, and configure the colorizer options to define area fill settings.
 

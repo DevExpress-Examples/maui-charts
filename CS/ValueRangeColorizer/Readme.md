@@ -6,7 +6,7 @@ In this example, the bar chart displays cryptocurrency portfolio yield. It color
 
 Follow the steps below to create a similar chart:
 
-* Add a [BarSeries](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.SplineSeries) object to the [ChartView.Series](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView.Series) collection, and set its [Data](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.XYSeries.Data) property to bind the series to a data source.
+* Add a [BarSeries](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.SplineSeries) object to the [ChartView.Series](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView.Series) collection, and specify its [Data](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.XYSeries.Data) property to bind the series to a data source.
 
 * Assign a [ValueBandPointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ValueBandPointColorizer) object to the [BarSeries.PointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BarSeries.PointColorizer) property. 
 

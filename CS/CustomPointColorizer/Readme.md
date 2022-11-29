@@ -4,7 +4,7 @@ In this example, the bar chart displays monthly values colored based on the seas
 
 ![Apply a custom coloring rule to bars](./img/chart-custom-point.png)
 
-To paint bars by seasons, assign a [custom colorizer](https://docs.devexpress.com/MAUI/403339/charts/series-point-colorizers#custom-point-colorizers) to a [bar series](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BarSeries)' [PointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BarSeries.PointColorizer) property. In this example, the custom colorizer selects a color depending on the month serial number.
+To paint bars according to the season, assign a [custom colorizer](https://docs.devexpress.com/MAUI/403339/charts/series-point-colorizers#custom-point-colorizers) to a [bar series](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BarSeries)' [PointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BarSeries.PointColorizer) property. In this example, the custom colorizer selects a color depending on the month's serial number.
 
 ```xaml
 <dxc:BarSeries PointColorizer="{local:CustomColorizer}">

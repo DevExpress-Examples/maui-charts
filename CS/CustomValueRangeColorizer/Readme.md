@@ -11,7 +11,7 @@ In this example, each data source item that is used to create a bubble contains 
 * **Population** - Stores data for bubble weight values that define the bubble size.
 * **Hpi** - Stores values that a colorizer uses to determine the bubble color.
 
-To paint bubbles by the ranges of underlying values, assign a [CustomValueBandPointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.CustomValueBandPointColorizer) to a [BubbleSeries](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BubbleSeries)' [PointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BubbleSeries.PointColorizer) property. 
+To paint bubbles according to the ranges of underlying values, assign a [CustomValueBandPointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.CustomValueBandPointColorizer) to a [BubbleSeries](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BubbleSeries)' [PointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BubbleSeries.PointColorizer) property. 
 
 The colorizer's [ValueProvider](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.CustomValueBandPointColorizer.ValueProvider) returns HPI values that are used to determine point colors.
 

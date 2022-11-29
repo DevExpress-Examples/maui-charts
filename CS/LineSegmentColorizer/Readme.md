@@ -2,13 +2,15 @@
 
 In this example, the spline chart displays the temperature curve colored based on ranges of temperature values. 
 
-![](./img/chart-colorize-line-segments.png)
+![DevExpress Chart View for MAUI - A line series painted by its segments](./img/chart-colorize-line-segments.png)
 
-## Requirements
+Follow the steps below to create a similar chart:
 
-Please register the DevExpress NuGet Gallery in Visual Studio to restore the NuGet packages used in this solution. See the following topic for more information: [Get Started with DevExpress Mobile UI for .NET MAUI](https://docs.devexpress.com/MAUI/403249/get-started).
+* Add a [SplineSeries](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.SplineSeries) object to the [ChartView.Series](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView.Series) collection, and specify its [Data](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.XYSeries.Data) property to bind the series to a data source.
 
-You can also refer to the following YouTube video for more information on how to get started with the DevExpress .NET MAUI Controls: [Setting up a .NET MAUI Project](https://www.youtube.com/watch?v=juJvl5UicIQ).
+* Initialize the bar series' [SegmentColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.LineSeries.SegmentColorizer) property with a [GradientPointBasedSegmentColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.GradientPointBasedSegmentColorizer) object.
+
+* Assign a [ValueBandPointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ValueBandPointColorizer) object to the [GradientPointBasedSegmentColorizer.PointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.GradientPointBasedSegmentColorizer.PointColorizer) property. Populate the colorizer's [ColorStops](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.GradientPointBasedSegmentColorizer.PointColorizer) collection with [ColorStop](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ColorStop) objects that specify colors for ranges of temperature values.
 
 <!-- default file list -->
 ## Files to Review
@@ -19,4 +21,5 @@ You can also refer to the following YouTube video for more information on how to
 
 ## Documentation
 
-[GradientPointBasedSegmentColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.GradientPointBasedSegmentColorizer)
+* [ChartView](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView)
+* [GradientPointBasedSegmentColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.GradientPointBasedSegmentColorizer)

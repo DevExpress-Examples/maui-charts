@@ -1,14 +1,19 @@
-# Custom Value Range Colorizer
+# Paint Bubbles Based on Data Source Field Value Ranges
 
 In this example, the bubble chart displays GDP values for the G20. A point's size indicates the country population and the color indicates the [HPI](https://en.wikipedia.org/wiki/Happy_Planet_Index).
 
-![](./img/chart-custom-value-range.png)
+![DevExpress Chart for MAUI - Bubbles are colored by underlying values](./img/chart-custom-value-range.png)
 
-## Requirements
+In this example, each data source item that is used to create a bubble contains four values:
 
-Please register the DevExpress NuGet Gallery in Visual Studio to restore the NuGet packages used in this solution. See the following topic for more information: [Get Started with DevExpress Mobile UI for .NET MAUI](https://docs.devexpress.com/MAUI/403249/get-started).
+* **Country** - Stores data for bubble arguments shown on the x-axis.
+* **Gdp** - Stores data for bubble values shown on the y-axis.
+* **Population** - Stores data for bubble weight values that define the bubble size.
+* **Hpi** - Stores values that a colorizer uses to determine the bubble color.
 
-You can also refer to the following YouTube video for more information on how to get started with the DevExpress .NET MAUI Controls: [Setting up a .NET MAUI Project](https://www.youtube.com/watch?v=juJvl5UicIQ).
+To paint bubbles according to the ranges of underlying values, assign a [CustomValueBandPointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.CustomValueBandPointColorizer) to a [BubbleSeries](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BubbleSeries)' [PointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BubbleSeries.PointColorizer) property. 
+
+The colorizer's [ValueProvider](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.CustomValueBandPointColorizer.ValueProvider) returns HPI values that are used to determine point colors.
 
 <!-- default file list -->
 ## Files to Review
@@ -19,4 +24,5 @@ You can also refer to the following YouTube video for more information on how to
 
 ## Documentation
 
-[CustomValueBandPointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.CustomValueBandPointColorizer)
+* [ChartView](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView)
+* [CustomValueBandPointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.CustomValueBandPointColorizer)

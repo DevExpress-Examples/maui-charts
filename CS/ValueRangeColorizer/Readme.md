@@ -1,14 +1,28 @@
-# Predefined Value Range Colorizer
+# Color Points by Their Values
 
-In this example, the bar chart displays cryptocurrency portfolio yield. It colors series points red when their Y-axis values are between **-100** and **0**, and green when values are between **0** and **100**. Note that this chart diagram is rotated. 
+In this example, the bar chart displays cryptocurrency portfolio yield. It colors series points red when their Y-axis values are between **-100** and **0**, and green when values are between **0** and **100**. Note that this chart diagram is [rotated](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView.Rotated?p=netframework). 
 
-![](./img/chart-predefined-value.png)
+![Chart with point value ranges](./img/chart-predefined-value.png)
 
-## Requirements
+Follow the steps below to create a similar chart:
 
-Please register the DevExpress NuGet Gallery in Visual Studio to restore the NuGet packages used in this solution. See the following topic for more information: [Get Started with DevExpress Mobile UI for .NET MAUI](https://docs.devexpress.com/MAUI/403249/get-started).
+* Add a [BarSeries](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.SplineSeries) object to the [ChartView.Series](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView.Series) collection, and specify its [Data](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.XYSeries.Data) property to bind the series to a data source.
 
-You can also refer to the following YouTube video for more information on how to get started with the DevExpress .NET MAUI Controls: [Setting up a .NET MAUI Project](https://www.youtube.com/watch?v=juJvl5UicIQ).
+* Assign a [ValueBandPointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ValueBandPointColorizer) object to the [BarSeries.PointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BarSeries.PointColorizer) property. 
+
+* To specify color boundaries, populate the colorizer's [ColorStops](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.BandPointColorizerBase.ColorStops) collection with [ColorStop](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ColorStop) objects.
+
+    ```xaml
+    <dxc:BarSeries.PointColorizer>
+        <dxc:ValueBandPointColorizer>
+            <dxc:ValueBandPointColorizer.ColorStops>
+                <dxc:ColorStop Color="Green" Value1="0" Value2="100"/>
+                <dxc:ColorStop Color="Red" Value1="0" Value2="-100"/>
+            </dxc:ValueBandPointColorizer.ColorStops>
+        </dxc:ValueBandPointColorizer>
+    </dxc:BarSeries.PointColorizer>
+    ```
+
 
 <!-- default file list -->
 ## Files to Review
@@ -19,4 +33,5 @@ You can also refer to the following YouTube video for more information on how to
 
 ## Documentation
 
-[ValueBandPointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ValueBandPointColorizer)
+* [ChartView](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView)
+* [ValueBandPointColorizer](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ValueBandPointColorizer)

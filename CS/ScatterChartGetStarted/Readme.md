@@ -1,26 +1,12 @@
 # DevExpress Scatter Chart for .NET MAUI
 
-The [DevExpress Mobile UI](https://www.devexpress.com/maui/) allows you to use a .NET cross-platform UI toolkit and C# to build native apps for iOS and Android.
-
-![DevExpress Mobile UI for .NET MAUI](../../img/maui.png)
-
-The **DevExpress Mobile UI for Xamarin.Forms and .NET MAUI** is free of charge. To learn more about our offer and to obtain your copy, visit [Free DevExpress Mobile UI for Xamarin.Forms and .NET MAUI](https://www.devexpress.com/xamarin-free).
-
-## Requirements
-
-Please register the DevExpress NuGet Gallery in Visual Studio to restore the NuGet packages used in this solution. See the following topic for more information: [Get Started with DevExpress Mobile UI for .NET MAUI](https://docs.devexpress.com/MAUI/403249/get-started).
-
-You can also refer to the following YouTube video for more information on how to get started with the DevExpress .NET MAUI Controls: [Setting up a .NET MAUI Project](https://www.youtube.com/watch?v=juJvl5UicIQ).
-
-## What's in This Project
-
 The [ChartView](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView) component can visualize data in a [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) as areas, bars, points, bubbles, lines, and other forms. This example allows you to get started with the [ChartView](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView) component and explore its basic functionality. It demonstrates how to add data series to a chart, configure axes, specify the chart's elements (legend, series labels, and hints), and customize series appearance.
 
 ![Chart View](img/devexpress-maui-chart-view.png)
 
 You can also refer to the following YouTube video for instructions on how to get started with the Chart Controls: [Adding Charts to Your .NET MAUI App](https://www.youtube.com/watch?v=uvcMy2WP0_M).
 
-### Files to Review
+## Files to Review
 
 <!-- default file list -->
 * [MauiProgram.cs](./MauiProgram.cs)
@@ -28,11 +14,6 @@ You can also refer to the following YouTube video for instructions on how to get
 * [ViewModel.cs](./ViewModel.cs)
 <!-- default file list end -->
 
-## How to Run This Application
-
-1. Install Visual Studio 2022 and the latest .NET MAUI version. See the following topic on docs.microsoft.com for more information: [.NET MAUI Installation](https://docs.microsoft.com/en-gb/dotnet/maui/get-started/installation).
-1. Register [your personal NuGet feed](https://nuget.devexpress.com/) in Visual Studio.
-    > If you are an active [DevExpress Universal](https://www.devexpress.com/subscriptions/universal.xml) customer, DevExpress Controls for .NET MAUI are available in your [personal NuGet feed](https://nuget.devexpress.com/).
 
 ## How to Reproduce This Application
 
@@ -41,16 +22,19 @@ The following step-by-step tutorial details how to reproduce this application.
 ### Create a New Project
 
 1. In Visual Studio 2022, create a new .NET MAUI project. Name it *ChartViewExample*.
+
     > If the wizard does not suggest a template for .NET MAUI projects, you can call the following command in a CLI to create a new .NET MAUI project:
     > ```
     > dotnet new maui -n ChartViewExample
     > ```
+
 1. Install the **DevExpress.Maui.Charts** package from the DevExpress NuGet Gallery.
-> DevExpress Pie Chart for .NET MAUI supports iOS and Android. The project should only contain these platforms.
+
+    > DevExpress Pie Chart for .NET MAUI supports iOS and Android. The project should only contain these platforms.
 
 ### Add a Chart View to the Main Page
 
-In the *MauiProgram.cs* file, call the **UseDevExpress** method to register handlers for the `ChartView` and other DevExpress controls:
+In the *MauiProgram.cs* file, call the `UseDevExpress` method to register handlers for the `ChartView` and other DevExpress controls:
 ```cs
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
@@ -307,7 +291,8 @@ Set the [LineSeries.MarkersVisible](https://docs.devexpress.com/MAUI/DevExpress.
 
 ## Documentation
 
-[Scatter Chart for .NET MAUI - Get Started](https://docs.devexpress.com/MAUI/403298/charts/scatter-plot/get-started-started)
+* [Scatter Chart for .NET MAUI - Get Started](https://docs.devexpress.com/MAUI/403298/charts/scatter-plot/get-started-started)
+* [ChartView](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartView?p=netframework)
 
 
 ## More Examples

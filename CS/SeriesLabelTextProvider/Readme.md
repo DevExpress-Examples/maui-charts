@@ -1,14 +1,38 @@
-# Predefined Value Range Colorizer
+# Apply a Custom Format to Pie Slice Labels
 
-In this example, the chart implements the [ISeriesLabelTextProvider](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ISeriesLabelTextProvider) interface to define custom labels for a series.
+This example configures pie chart settings and runtime, and shows how to create a custom formatter for point labels.
 
-![](./img/seriel-label-text-provider.png)
+![A pie chart with formatted labels](./img/seriel-label-text-provider.png)
 
-## Requirements
+To create a custom formatter for label text, do the following:
 
-Please register the DevExpress NuGet Gallery in Visual Studio to restore the NuGet packages used in this solution. See the following topic for more information: [Get Started with DevExpress Mobile UI for .NET MAUI](https://docs.devexpress.com/MAUI/403249/get-started).
+* Create a class that implements the [ISeriesLabelTextProvider](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ISeriesLabelTextProvider) interface.
+* Implement its [ISeriesLabelTextProvider.GetText](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ISeriesLabelTextProvider.GetText(DevExpress.Maui.Charts.SeriesLabelValuesBase)) method so that it formats label text depending on the point value in the following way:
 
-You can also refer to the following YouTube video for more information on how to get started with the DevExpress .NET MAUI Controls: [Setting up a .NET MAUI Project](https://www.youtube.com/watch?v=juJvl5UicIQ).
+* _1234_ -> _$1.234K_
+* _123456789_ -> _$123.457M_
+* _12345678901_ -> _$12.346B_
+
+```cs
+public class LabelTextProvider : ISeriesLabelTextProvider {
+    string ISeriesLabelTextProvider.GetText(SeriesLabelValuesBase values) {
+        if (values is PieSeriesLabelValues seriesValues) {
+            double v = seriesValues.Value;
+            if (v >= 1000000000 || v <= -1000000000)
+                return (v / 1000000000.0).ToString("$#.###B", CultureInfo.InvariantCulture);
+            else if (v >= 1000000 || v <= -1000000)
+                return (v / 1000000.0).ToString("$#.###M", CultureInfo.InvariantCulture);
+            else if (v >= 1000 || v <= -1000)
+                return (v / 1000.0).ToString("$#.###K", CultureInfo.InvariantCulture);
+            else
+                return v.ToString();
+        }
+        return String.Empty;
+    }
+}
+```
+
+
 
 <!-- default file list -->
 ## Files to Review
@@ -19,4 +43,4 @@ You can also refer to the following YouTube video for more information on how to
 
 ## Documentation
 
-[ISeriesLabelTextProvider](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ISeriesLabelTextProvider)
+* [ISeriesLabelTextProvider](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ISeriesLabelTextProvider)

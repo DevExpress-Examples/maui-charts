@@ -15,21 +15,24 @@ The **DevExpress Mobile UI for Xamarin.Forms and .NET MAUI** is free of charge. 
 
 Please register the DevExpress NuGet Gallery in Visual Studio to restore the NuGet packages used in this solution. See the following topic for more information: [Get Started with DevExpress Mobile UI for .NET MAUI](https://docs.devexpress.com/MAUI/403249/get-started).
 
-You can also refer to the following YouTube video for more information on how to get started with the DevExpress .NET MAUI Controls: [Setting up a .NET MAUI Project](https://www.youtube.com/watch?v=juJvl5UicIQ).
+You can also refer to the following YouTube videos for more information on how to get started with the DevExpress .NET MAUI Controls and DevExpress Chart Controls for MAUI: 
+
+* [Setting up a .NET MAUI Project](https://www.youtube.com/watch?v=juJvl5UicIQ).
+* [Adding Charts to Your .NET MAUI App](https://www.youtube.com/watch?v=uvcMy2WP0_M).
 
 ## What's in This Repository
 
-This repository contains projects that allow you to display the following Chart types:
+This repository contains projects that allow you to create different charts.
+
+### Create Charts
 
 * [Financial Chart](./CS/FinancialChart)
 * [Pie Chart](./CS/PieChartGetStarted)
 * [Scatter Chart](./CS/ScatterChartGetStarted)
 
-You can also refer to the following YouTube video for instructions on how to get started with the Chart Controls: [Adding Charts to Your .NET MAUI App](https://www.youtube.com/watch?v=uvcMy2WP0_M).
+### Paint Charts
 
-The following project describes how to change colors of Chart elements:
-
-* [Colorize Area Segment](./CS/AreaSegmentColorizer)
+* [Fill Area Chart by Segments](./CS/AreaSegmentColorizer)
 * [Colorize Each Point](./CS/ColorEachPointColorizer)
 * [Colorize Custom Point](./CS/CustomPointColorizer)
 * [Colorize Custom Value Range](./CS/CustomValueRangeColorizer)
@@ -37,16 +40,16 @@ The following project describes how to change colors of Chart elements:
 * [Colorize Line Segment](./CS/LineSegmentColorizer)
 * [Colorize Value Range](./CS/ValueRangeColorizer)
 
-The [SeriesLabelTextProvider](./CS/SeriesLabelTextProvider) example shows how to define custom labels for a series.
+### Configure Chart Elements
+
+* [Apply a Custom Format to Pie Slice Labels](./CS/SeriesLabelTextProvider)
 
 ## Documentation
 
-- [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid)
-- [Charts](https://docs.devexpress.com/MAUI/403300/charts/charts)
-- [Data Form](https://docs.devexpress.com/MAUI/403640/data-form)
-- [Navigation](https://docs.devexpress.com/MAUI/403297/navigation/index)
-- [Data Editors](https://docs.devexpress.com/MAUI/403427/editors/index)
-- [Collection View](https://docs.devexpress.com/MAUI/403324/collection-view/index)
+* [Prerequisites for .NET MAUI and DevExpress Mobile UI](https://docs.devexpress.com/MAUI/404022/prerequisites)
+* [Get Started](https://docs.devexpress.com/MAUI/403249/get-started/get-started)
+* [Charts](https://docs.devexpress.com/MAUI/403300/charts/charts)
+
 
 ## More Examples
 

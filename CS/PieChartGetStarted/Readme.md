@@ -5,37 +5,17 @@
 <!-- default badges end -->
 # DevExpress Pie Chart for .NET MAUI
 
-The [DevExpress Mobile UI](https://www.devexpress.com/maui/) allows you to use a .NET cross-platform UI toolkit and C# to build native apps for iOS and Android.
-
-![DevExpress Mobile UI for .NET MAUI](../../img/maui.png)
-
-The **DevExpress Mobile UI for Xamarin.Forms and .NET MAUI** is free of charge. To learn more about our offer and to obtain your copy, visit [Free DevExpress Mobile UI for Xamarin.Forms and .NET MAUI](https://www.devexpress.com/xamarin-free).
-
-## Requirements
-
-Please register the DevExpress NuGet Gallery in Visual Studio to restore the NuGet packages used in this solution. See the following topic for more information: [Get Started with DevExpress Mobile UI for .NET MAUI](https://docs.devexpress.com/MAUI/403249/get-started).
-
-You can also refer to the following YouTube video for more information on how to get started with the DevExpress .NET MAUI Controls: [Setting up a .NET MAUI Project](https://www.youtube.com/watch?v=juJvl5UicIQ).
-
-## What's in This Project
-
 The [PieChartView](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.PieChartView) component visualizes data as a circle chart divided into slices to illustrate numerical proportion. This example allows you to get started with the **PieChartView** component and explore its basic functionality.
 
-<img src="img/devexpress-maui-pie-chart.png" width="400"/>
+<img src="img/devexpress-maui-pie-chart.png" width="400" alt="DevExpress MAUI Controls - Pie Chart"/>
 
-### Files to Review
+## Files to Review
 
 <!-- default file list -->
 * [MauiProgram.cs](./MauiProgram.cs)
 * [MainPage.xaml](./MainPage.xaml)
 * [ViewModel.cs](./ViewModel.cs)
 <!-- default file list end -->
-
-## How to Run This Application
-
-1. Install Visual Studio 2022 and the latest .NET MAUI version. See the following topic on docs.microsoft.com for more information: [.NET MAUI Installation](https://docs.microsoft.com/en-gb/dotnet/maui/get-started/installation).
-1. Register [your personal NuGet feed](https://nuget.devexpress.com/) in Visual Studio.
-    > If you are an active [DevExpress Universal](https://www.devexpress.com/subscriptions/universal.xml) customer, DevExpress Controls for .NET MAUI are available in your [personal NuGet feed](https://nuget.devexpress.com).
 
 ## How to Reproduce This Application
 
@@ -44,17 +24,19 @@ The following step-by-step tutorial details how to reproduce this application.
 ### Create a New Project
 
 1. In Visual Studio 2022, create a new .NET MAUI project. Name it *PieChartGetStarted*.
+
     > If the wizard does not propose a template for .NET MAUI projects, you can call the following command in a CLI to create a new .NET MAUI project:
     > ```
     > dotnet new maui -n PieChartGetStarted
     > ```
+    
 1. Install the **DevExpress.Maui.Charts** package from this feed.
 
-> DevExpress Pie Chart for .NET MAUI supports iOS and Android. The project should contain only these platforms.
+    > DevExpress Pie Chart for .NET MAUI supports iOS and Android. The project should contain only these platforms.
 
 ### Add a Pie Chart to the Main Page
 
-In the *MauiProgram.cs* file, call the **UseDevExpress** method to register handlers for the `PieChartView` and other DevExpress controls:
+In the *MauiProgram.cs* file, call the `UseDevExpress` method to register handlers for the `PieChartView` and other DevExpress controls:
 
 ```cs
 using Microsoft.Maui;

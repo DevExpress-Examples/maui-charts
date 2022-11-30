@@ -24,6 +24,8 @@ You can also refer to the following YouTube videos for more information on how t
 
 This repository contains projects that allow you to create different charts.
 
+![DevExpress Chart View for MAUI - Create an OHLC series](./CS/FinancialChart/financial-chart.png)
+
 ### Create Charts
 
 * [Financial Chart](./CS/FinancialChart)

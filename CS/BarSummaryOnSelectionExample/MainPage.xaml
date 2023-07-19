@@ -1,0 +1,91 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             xmlns:local="clr-namespace:BarSummaryOnSelectionExample"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             ios:Page.UseSafeArea="true"
+             x:Class= "BarSummaryOnSelectionExample.MainPage" x:DataType="{x:Type local:MainViewModel}" Padding="0" Background="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource surfaceDark}}">
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior x:Name="statusBarBehavior" StatusBarColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource surfaceDark}}" StatusBarStyle="{AppThemeBinding Light=DarkContent, Dark=LightContent}"/>
+    </ContentPage.Behaviors>
+    <Grid RowDefinitions="Auto,Auto,*,Auto" Padding="0">
+        <Label Text="{Binding PeriodText}" HorizontalOptions="Center" Style="{StaticResource paleLabelStyle}" Margin="0,20,0,0"/>
+        <Label Text="{Binding TotalReplies, StringFormat='Total: {0}'}" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center"  Margin="0,15,0,15" Grid.Row="1"/>
+        <dxc:ChartView SelectionChanged="ChartView_SelectionChanged" Rotated="True" Grid.Row="2" Margin="0,0,0,10">
+            <dxc:ChartView.AxisX>
+                <dxc:QualitativeAxisX>
+                    <dxc:QualitativeAxisX.Label>
+                        <dxc:AxisLabel>
+                            <dxc:AxisLabel.Style>
+                                <dxc:AxisLabelStyle>
+                                    <dxc:AxisLabelStyle.TextStyle>
+                                        <dxc:TextStyle Color="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" Size="13"/>
+                                    </dxc:AxisLabelStyle.TextStyle>
+                                </dxc:AxisLabelStyle>
+                            </dxc:AxisLabel.Style>
+                        </dxc:AxisLabel>
+                    </dxc:QualitativeAxisX.Label>
+                </dxc:QualitativeAxisX>
+            </dxc:ChartView.AxisX>
+            <dxc:ChartView.AxisY>
+                <dxc:NumericAxisY>
+                    <dxc:NumericAxisY.Label>
+                        <dxc:AxisLabel>
+                            <dxc:AxisLabel.Style>
+                                <dxc:AxisLabelStyle>
+                                    <dxc:AxisLabelStyle.TextStyle>
+                                        <dxc:TextStyle Color="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" Size="13"/>
+                                    </dxc:AxisLabelStyle.TextStyle>
+                                </dxc:AxisLabelStyle>
+                            </dxc:AxisLabel.Style>
+                        </dxc:AxisLabel>
+                    </dxc:NumericAxisY.Label>
+                </dxc:NumericAxisY>
+            </dxc:ChartView.AxisY>
+            <dxc:ChartView.ChartStyle>
+                <dxc:ChartStyle BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource surfaceDark}}" />
+            </dxc:ChartView.ChartStyle>
+            <dxc:ChartView.Series>
+                <dxc:BarSeries>
+                    <dxc:BarSeries.Data>
+                        <dxc:SeriesDataAdapter DataSource="{Binding Path=ComponentReplyInfos}" ArgumentDataMember="ComponentName">
+                            <dxc:SeriesDataAdapter.ValueDataMembers>
+                                <dxc:ValueDataMember Type="Value" Member="Count"/>
+                            </dxc:SeriesDataAdapter.ValueDataMembers>
+                        </dxc:SeriesDataAdapter>
+                    </dxc:BarSeries.Data>
+                    <dxc:BarSeries.PointColorizer>
+                        <dxc:ColorEachPointColorizer x:Name="col">
+                            <dxc:ColorEachPointColorizer.Palette>
+                                <x:Array Type="{x:Type Color}">
+                                    <Color>#FF8873bf</Color>
+                                    <Color>#CF8873bf</Color>
+                                    <Color>#AF8873bf</Color>
+                                    <Color>#9F8873bf</Color>
+                                    <Color>#7F8873bf</Color>
+                                    <Color>#6F8873bf</Color>
+                                </x:Array>
+                            </dxc:ColorEachPointColorizer.Palette>
+                        </dxc:ColorEachPointColorizer>
+                    </dxc:BarSeries.PointColorizer>
+                </dxc:BarSeries>
+            </dxc:ChartView.Series>
+        </dxc:ChartView>
+        <Border Grid.Row="3" Background="{StaticResource panelBrush}" StrokeThickness="0">
+            <VerticalStackLayout Margin="30,10">
+                <Label Text="{Binding Path=SelectedComponentString}" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,5,0,0" FontSize="16"/>
+                <Grid ColumnDefinitions="*,*" Margin="0,10,0,0">
+                    <Label Text="{Binding SelectionCompletedThreads, StringFormat='{0} Completed'}" HorizontalOptions="Start" Style="{StaticResource primaryLabelStyle}"/>
+                    <Label Text="{Binding SelectionThreadsCount, StringFormat='Total: {0}'}" HorizontalOptions="End" Grid.Column="1" Style="{StaticResource paleLabelStyle}"/>
+                </Grid>
+                <ProgressBar HorizontalOptions="Fill" ProgressColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" Progress="{Binding SelectionCompletedThreadsProgress}"/>
+                <Grid ColumnDefinitions="*,*,*" Margin="0,0,0,0" Padding="20,10,20,10" HorizontalOptions="Fill">
+                    <local:InfoIconElement Image="bug" Value="{Binding SelectionBugs}" Description="Bugs&#x0a;Reported" HorizontalOptions="Center"/>
+                    <local:InfoIconElement Image="iteration" Value="{Binding SelectionAvgIterations}" Description="Ticket&#x0a;Iterations" Grid.Column="1" HorizontalOptions="Center"/>
+                    <local:InfoIconElement Image="time" Value="{Binding SelectionAvgReplyTime}" Description="Reply &#x0a;Time" Grid.Column="2" HorizontalOptions="Center"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+</ContentPage>

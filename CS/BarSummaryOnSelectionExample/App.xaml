@@ -1,0 +1,60 @@
+﻿<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
+             xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+             xmlns:local="clr-namespace:BarSummaryOnSelectionExample"
+             x:Class= "BarSummaryOnSelectionExample.App"
+             windows:Application.ImageDirectory="Assets">
+    <Application.Resources>
+        <Color x:Key="Primary">#6750A4</Color>
+        <Color x:Key="PrimaryDark">#9a80e0</Color>
+        <Color x:Key="Secondary">#DFD8F7</Color>
+        <Color x:Key="CardColor">#FFF9F6FC</Color>
+        <Color x:Key="panelLight">#F9F6FF</Color>
+        <Color x:Key="panelDark">#302D38</Color>
+        <Color x:Key="surfaceDark">#151417</Color>
+        <Color x:Key="Tertiary">#2B0B98</Color>
+        <Color x:Key="White">White</Color>
+        <Color x:Key="Black">Black</Color>
+        <Color x:Key="Gray50">#F2F2F7</Color>
+        <Color x:Key="Gray100">#E1E1E1</Color>
+        <Color x:Key="Gray200">#C8C8C8</Color>
+        <Color x:Key="Gray300">#ACACAC</Color>
+        <Color x:Key="Gray400">#919191</Color>
+        <Color x:Key="Gray500">#6E6E6E</Color>
+        <Color x:Key="Gray550">#49454F</Color>
+        <Color x:Key="Gray600">#404040</Color>
+        <Color x:Key="Gray900">#212121</Color>
+        <Color x:Key="Gray950">#141414</Color>
+        <Color x:Key="TonalForeground">#1D192B</Color>
+
+        <SolidColorBrush x:Key="panelBrush" Color="{AppThemeBinding Light={StaticResource panelLight}, Dark={StaticResource panelDark}}"/>
+        <SolidColorBrush x:Key="surfaceBrush" Color="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray100}}"/>
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Gray950}}" />
+            <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource White}}" />
+            <Setter Property="IconColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource White}}" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
+        </Style>
+        <Style TargetType="Label" x:Key="normalLabel" BasedOn="{StaticResource Microsoft.Maui.Controls.Label}">
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray550}, Dark={StaticResource Gray200}}" />
+        </Style>
+        <Style TargetType="dxco:DXImage">
+            <Setter Property="TintColor" Value="{AppThemeBinding Light={StaticResource Gray550}, Dark={StaticResource Gray200}}" />
+        </Style>
+
+        <Style x:Key="paleLabelStyle" TargetType="Label" BasedOn="{StaticResource Microsoft.Maui.Controls.Label}">
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray400}, Dark={StaticResource Gray400}}" />
+        </Style>
+        <Style x:Key="primaryLabelStyle" TargetType="Label" BasedOn="{StaticResource Microsoft.Maui.Controls.Label}">
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
+        </Style>
+        <Style TargetType="Shell" ApplyToDerivedTypes="True">
+            <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource surfaceDark}}" />
+            <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
+            <Setter Property="Shell.NavBarHasShadow" Value="False" />
+        </Style>
+    </Application.Resources>
+</Application>

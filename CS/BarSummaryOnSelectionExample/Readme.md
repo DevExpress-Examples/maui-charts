@@ -1,5 +1,7 @@
 # Interactive Chart: Bar Selection
 
+<img src="https://github.com/DevExpress-Examples/maui-charts/assets/12169834/b7f4f8ea-b25f-4dde-98a9-c643d03f3bbb" width="20%"/>
+
 * Follow the steps below to implement an interactive chart. Users can select bars and see additional information associated with them.
   1. Subscribe to the [SelectionChanged](https://docs.devexpress.com/MAUI/DevExpress.Maui.Charts.ChartBaseView.SelectionChanged) event. In the event handler, update the view model's properties.
   2. Implement [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-7.0) in the view model to update the view's data.

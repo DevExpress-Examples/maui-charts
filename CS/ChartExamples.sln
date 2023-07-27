@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomValueRangeColorizer",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AreaSegmentColorizer", "AreaSegmentColorizer\AreaSegmentColorizer.csproj", "{AA60EAD3-FBFB-43BB-8964-4C5647F6631C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarSummaryOnSelectionExample", "BarSummaryOnSelectionExample\BarSummaryOnSelectionExample.csproj", "{AA60EAD3-FBFB-43BB-8964-4C5647F6631C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialCandlestickWithOverlay", "FinancialCandlestickWithOverlay\FinancialCandlestickWithOverlay.csproj", "{AA60EAD3-FBFB-43BB-8964-4C5647F6631C}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorEachPointColorizer", "ColorEachPointColorizer\ColorEachPointColorizer.csproj", "{A467A3A5-A80A-4318-82C3-51AF228D938C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomPointColorizer", "CustomPointColorizer\CustomPointColorizer.csproj", "{2CC8CC8D-4801-42A6-847C-E48B90E0D4DB}"

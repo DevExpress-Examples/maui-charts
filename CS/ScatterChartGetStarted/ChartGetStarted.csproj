@@ -1,45 +1,35 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-	<PropertyGroup>
-		<!-- iOS, Android -->
-		<TargetFrameworks>net7.0-ios;net7.0-android</TargetFrameworks>
-		<OutputType>Exe</OutputType>
-		<UseMaui>true</UseMaui>
-		<SingleProject>true</SingleProject>
-		<RootNamespace>ChartGetStarted</RootNamespace>
-
-		<!-- Display name -->
-		<ApplicationTitle>ChartGetStarted</ApplicationTitle>
-
-		<!-- App Identifier -->
-		<ApplicationId>com.companyname.ChartGetStarted</ApplicationId>
-
-		<!-- Versions -->
-		<ApplicationVersion>1</ApplicationVersion>
-	</PropertyGroup>
-
-	<ItemGroup>
-		<!-- App Icon -->
-		<MauiImage Include="Resources\appicon.svg" ForegroundFile="Resources\appiconfg.svg" IsAppIcon="true" Color="#512BD4" />
-
-		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\appiconfg.svg" Color="#512BD4" />
-
-		<!-- Images -->
-		<MauiImage Include="Resources\Images\*" />
-
-		<!-- Custom Fonts -->
-		<MauiFont Include="Resources\Fonts\*" />
-	</ItemGroup>
-             
-	<ItemGroup>
-	  <PackageReference Include="DevExpress.Maui.Charts" Version="22.2.*" />
-	    
-	</ItemGroup>
-
-	<PropertyGroup>
-		<RuntimeIdentifier Condition="$(TargetFramework.Contains('-ios'))">iossimulator-x64</RuntimeIdentifier>
-		<UseInterpreter Condition="$(TargetFramework.Contains('-android'))">False</UseInterpreter>
-	</PropertyGroup>
-
+  <PropertyGroup>
+    <!-- iOS, Android -->
+    <TargetFrameworks>net8.0-ios;net8.0-android</TargetFrameworks>
+    <OutputType>Exe</OutputType>
+    <UseMaui>true</UseMaui>
+    <SingleProject>true</SingleProject>
+    <RootNamespace>ChartGetStarted</RootNamespace>
+    <!-- Display name -->
+    <ApplicationTitle>ChartGetStarted</ApplicationTitle>
+    <!-- App Identifier -->
+    <ApplicationId>com.companyname.ChartGetStarted</ApplicationId>
+    <!-- Versions -->
+    <ApplicationVersion>1</ApplicationVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- App Icon -->
+    <MauiImage Include="Resources\appicon.svg" ForegroundFile="Resources\appiconfg.svg" IsAppIcon="true" Color="#512BD4" />
+    <!-- Splash Screen -->
+    <MauiSplashScreen Include="Resources\appiconfg.svg" Color="#512BD4" />
+    <!-- Images -->
+    <MauiImage Include="Resources\Images\*" />
+    <!-- Custom Fonts -->
+    <MauiFont Include="Resources\Fonts\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+    <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+    <PackageReference Include="DevExpress.Maui.Charts" Version="23.2.*" />
+  </ItemGroup>
+  <PropertyGroup>
+    <RuntimeIdentifier Condition="$(TargetFramework.Contains('-ios'))">iossimulator-x64</RuntimeIdentifier>
+    <UseInterpreter Condition="$(TargetFramework.Contains('-android'))">False</UseInterpreter>
+  </PropertyGroup>
 </Project>

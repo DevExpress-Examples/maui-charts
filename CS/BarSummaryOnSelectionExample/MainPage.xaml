@@ -1,6 +1,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts"
+             xmlns:dx="clr-namespace:DevExpress.Maui.Core;assembly=DevExpress.Maui.Core"
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
              xmlns:local="clr-namespace:BarSummaryOnSelectionExample"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
@@ -73,7 +74,7 @@
             </dxc:ChartView.Series>
         </dxc:ChartView>
         <Border Grid.Row="3" Background="{StaticResource panelBrush}" StrokeThickness="0">
-            <VerticalStackLayout Margin="30,10">
+            <dx:DXStackLayout Orientation="Vertical" Margin="30,10">
                 <Label Text="{Binding Path=SelectedComponentString}" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,5,0,0" FontSize="16"/>
                 <Grid ColumnDefinitions="*,*" Margin="0,10,0,0">
                     <Label Text="{Binding SelectionCompletedThreads, StringFormat='{0} Completed'}" HorizontalOptions="Start" Style="{StaticResource primaryLabelStyle}"/>
@@ -85,7 +86,7 @@
                     <local:InfoIconElement Image="iteration" Value="{Binding SelectionAvgIterations}" Description="Ticket&#x0a;Iterations" Grid.Column="1" HorizontalOptions="Center"/>
                     <local:InfoIconElement Image="time" Value="{Binding SelectionAvgReplyTime}" Description="Reply &#x0a;Time" Grid.Column="2" HorizontalOptions="Center"/>
                 </Grid>
-            </VerticalStackLayout>
+            </dx:DXStackLayout>
         </Border>
     </Grid>
 </ContentPage>

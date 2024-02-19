@@ -1,6 +1,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+             xmlns:dx="clr-namespace:DevExpress.Maui.Core;assembly=DevExpress.Maui.Core"
              xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts"
              xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
@@ -20,10 +20,10 @@
     <Grid RowDefinitions="Auto, *">
         <Grid ColumnDefinitions="*, Auto, Auto" RowDefinitions="Auto, Auto, Auto" Padding="16,6,16,10" Background="{StaticResource panelBrush}">
             <Label Text="{Binding DataStorage.PairInfo.LatestPrice, StringFormat='{0:n0}'}" FontAttributes="Bold" VerticalOptions="Start" VerticalTextAlignment="Start" FontSize="24" Grid.RowSpan="2"/>
-            <HorizontalStackLayout Grid.Row="2">
+            <dx:DXStackLayout Orientation="Horizontal" Grid.Row="2">
                 <Label Text="{Binding DataStorage.PairInfo.InDollars, StringFormat='≈ {0:c}'}" FontAttributes="Bold"/>
                 <Label Text="{Binding DataStorage.PairInfo.ChangePercent, StringFormat='+ {0:p2}'}" FontAttributes="Bold" TextColor="Green" Margin="5,0,0,0"/>
-            </HorizontalStackLayout>
+            </dx:DXStackLayout>
             <Label Text="{Binding DataStorage.PairInfo.HighPriceValue, StringFormat='{0:n0}'}" Margin="0,2,0,0" HorizontalOptions="End" FontSize="12" Grid.Column="1"/>
             <Label Text="24h Hight" Style="{StaticResource paleLabelStyle}" FontSize="12" HorizontalOptions="Start" Margin="8,2,0,0" Grid.Column="2"/>
             <Label Text="{Binding DataStorage.PairInfo.LowPriceValue, StringFormat='{0:n0}'}" Margin="0,2,0,0" HorizontalOptions="End" FontSize="12" Grid.Column="1" Grid.Row="1"/>

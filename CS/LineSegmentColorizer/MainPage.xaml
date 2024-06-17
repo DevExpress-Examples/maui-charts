@@ -1,56 +1,55 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts"
+             xmlns:dx="http://schemas.devexpress.com/maui"
              xmlns:local="clr-namespace:LineSegmentColorizer"
              x:Class="LineSegmentColorizer.MainPage">
 
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-    <dxc:ChartView>
-        <dxc:ChartView.Series>
-            <dxc:SplineSeries LegendTextPattern="{}{CLV}°C — {CHV}°C">
-                <dxc:SplineSeries.Data>
-                    <dxc:SeriesDataAdapter DataSource="{Binding Data}" ArgumentDataMember="Argument">
-                        <dxc:ValueDataMember Member="Value" Type="Value"/>
-                    </dxc:SeriesDataAdapter>
-                </dxc:SplineSeries.Data>
-                <dxc:SplineSeries.SegmentColorizer>
-                    <dxc:GradientPointBasedSegmentColorizer>
-                        <dxc:GradientPointBasedSegmentColorizer.PointColorizer>
-                            <dxc:ValueBandPointColorizer>
-                                <dxc:ValueBandPointColorizer.ColorStops>
-                                    <dxc:ColorStop  Color="#00008b" Value1="-40" Value2="-30"/>
-                                    <dxc:ColorStop Color="#222b9d" Value1="-30" Value2="-20"/>
-                                    <dxc:ColorStop Color="#4556af" Value1="-20" Value2="-15"/>
-                                    <dxc:ColorStop Color="#6781c1" Value1="-15" Value2="-10"/>
-                                    <dxc:ColorStop Color="#8aacd3" Value1="-10" Value2="-5"/>
-                                    <dxc:ColorStop Color="#add8e6" Value1="-5" Value2="0"/>
-                                    <dxc:ColorStop Color="#bdbab8" Value1="0" Value2="5"/>
-                                    <dxc:ColorStop Color="#cd9d8a" Value1="5" Value2="10"/>
-                                    <dxc:ColorStop Color="#de7f5b" Value1="10" Value2="15"/>
-                                    <dxc:ColorStop Color="#ee622d" Value1="15" Value2="20"/>
-                                    <dxc:ColorStop Color="#ff4500" Value1="20" Value2="30"/>
-                                </dxc:ValueBandPointColorizer.ColorStops>
-                            </dxc:ValueBandPointColorizer>
-                        </dxc:GradientPointBasedSegmentColorizer.PointColorizer>
-                    </dxc:GradientPointBasedSegmentColorizer>
-                </dxc:SplineSeries.SegmentColorizer>
-            </dxc:SplineSeries>
-        </dxc:ChartView.Series>
-        <dxc:ChartView.Legend>
-            <dxc:Legend Orientation="TopToBottom"
+    <dx:ChartView>
+        <dx:ChartView.Series>
+            <dx:SplineSeries LegendTextPattern="{}{CLV}°C — {CHV}°C">
+                <dx:SplineSeries.Data>
+                    <dx:SeriesDataAdapter DataSource="{Binding Data}" ArgumentDataMember="Argument">
+                        <dx:ValueDataMember Member="Value" Type="Value"/>
+                    </dx:SeriesDataAdapter>
+                </dx:SplineSeries.Data>
+                <dx:SplineSeries.SegmentColorizer>
+                    <dx:GradientPointBasedSegmentColorizer>
+                        <dx:GradientPointBasedSegmentColorizer.PointColorizer>
+                            <dx:ValueBandPointColorizer>
+                                <dx:ValueBandPointColorizer.ColorStops>
+                                    <dx:ColorStop  Color="#00008b" Value1="-40" Value2="-30"/>
+                                    <dx:ColorStop Color="#222b9d" Value1="-30" Value2="-20"/>
+                                    <dx:ColorStop Color="#4556af" Value1="-20" Value2="-15"/>
+                                    <dx:ColorStop Color="#6781c1" Value1="-15" Value2="-10"/>
+                                    <dx:ColorStop Color="#8aacd3" Value1="-10" Value2="-5"/>
+                                    <dx:ColorStop Color="#add8e6" Value1="-5" Value2="0"/>
+                                    <dx:ColorStop Color="#bdbab8" Value1="0" Value2="5"/>
+                                    <dx:ColorStop Color="#cd9d8a" Value1="5" Value2="10"/>
+                                    <dx:ColorStop Color="#de7f5b" Value1="10" Value2="15"/>
+                                    <dx:ColorStop Color="#ee622d" Value1="15" Value2="20"/>
+                                    <dx:ColorStop Color="#ff4500" Value1="20" Value2="30"/>
+                                </dx:ValueBandPointColorizer.ColorStops>
+                            </dx:ValueBandPointColorizer>
+                        </dx:GradientPointBasedSegmentColorizer.PointColorizer>
+                    </dx:GradientPointBasedSegmentColorizer>
+                </dx:SplineSeries.SegmentColorizer>
+            </dx:SplineSeries>
+        </dx:ChartView.Series>
+        <dx:ChartView.Legend>
+            <dx:Legend Orientation="TopToBottom"
                         HorizontalPosition="RightOutside"
                         VerticalPosition="Center"/>
-        </dxc:ChartView.Legend>
-        <dxc:ChartView.AxisX>
-            <dxc:DateTimeAxisX>
-                <dxc:DateTimeAxisX.Label>
-                    <dxc:AxisLabel TextFormat="MMM"/>
-                </dxc:DateTimeAxisX.Label>
-            </dxc:DateTimeAxisX>
-        </dxc:ChartView.AxisX>
-    </dxc:ChartView>
+        </dx:ChartView.Legend>
+        <dx:ChartView.AxisX>
+            <dx:DateTimeAxisX>
+                <dx:DateTimeAxisX.Label>
+                    <dx:AxisLabel TextFormat="MMM"/>
+                </dx:DateTimeAxisX.Label>
+            </dx:DateTimeAxisX>
+        </dx:ChartView.AxisX>
+    </dx:ChartView>
 
 </ContentPage>

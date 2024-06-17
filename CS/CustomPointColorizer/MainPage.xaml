@@ -1,24 +1,23 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts"
+             xmlns:dx="http://schemas.devexpress.com/maui"
              xmlns:local="clr-namespace:CustomPointColorizer"
              x:Class="CustomPointColorizer.MainPage">
     <ContentPage.BindingContext>
         <local:ViewModel />
     </ContentPage.BindingContext>
-    <dxc:ChartView>
-        <dxc:ChartView.Series>
-            <dxc:BarSeries PointColorizer="{local:CustomColorizer}">
-                <dxc:BarSeries.Data>
-                    <dxc:SeriesDataAdapter DataSource="{Binding Data}" ArgumentDataMember="Argument">
-                        <dxc:ValueDataMember Member="Value" Type="Value" />
-                    </dxc:SeriesDataAdapter>
-                </dxc:BarSeries.Data>
-            </dxc:BarSeries>
-        </dxc:ChartView.Series>
-        <dxc:ChartView.AxisX>
-            <dxc:DateTimeAxisX MeasureUnit="Month" />
-        </dxc:ChartView.AxisX>
-    </dxc:ChartView>
+    <dx:ChartView>
+        <dx:ChartView.Series>
+            <dx:BarSeries PointColorizer="{local:CustomColorizer}">
+                <dx:BarSeries.Data>
+                    <dx:SeriesDataAdapter DataSource="{Binding Data}" ArgumentDataMember="Argument">
+                        <dx:ValueDataMember Member="Value" Type="Value" />
+                    </dx:SeriesDataAdapter>
+                </dx:BarSeries.Data>
+            </dx:BarSeries>
+        </dx:ChartView.Series>
+        <dx:ChartView.AxisX>
+            <dx:DateTimeAxisX MeasureUnit="Month" />
+        </dx:ChartView.AxisX>
+    </dx:ChartView>
 </ContentPage>

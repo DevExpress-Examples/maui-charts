@@ -13,6 +13,8 @@ namespace BarSummaryOnSelectionExample {
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
+                .UseDevExpressCharts()
+                .UseDevExpressControls()
                 .UseDevExpress(useLocalization: true)
                 .ConfigureFonts(fonts =>
                 {

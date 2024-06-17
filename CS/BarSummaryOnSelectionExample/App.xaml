@@ -1,7 +1,7 @@
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
-             xmlns:dxco="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+             xmlns:dx="http://schemas.devexpress.com/maui"
              xmlns:local="clr-namespace:BarSummaryOnSelectionExample"
              x:Class= "BarSummaryOnSelectionExample.App"
              windows:Application.ImageDirectory="Assets">
@@ -41,7 +41,7 @@
         <Style TargetType="Label" x:Key="normalLabel" BasedOn="{StaticResource Microsoft.Maui.Controls.Label}">
             <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray550}, Dark={StaticResource Gray200}}" />
         </Style>
-        <Style TargetType="dxco:DXImage">
+        <Style TargetType="dx:DXImage">
             <Setter Property="TintColor" Value="{AppThemeBinding Light={StaticResource Gray550}, Dark={StaticResource Gray200}}" />
         </Style>
 

@@ -14,6 +14,7 @@ namespace ChartGetStarted
 			builder
 				.UseMauiApp<App>()
 				.UseDevExpress()
+                .UseDevExpressCharts()
 				.ConfigureFonts(fonts => {
 					fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				});

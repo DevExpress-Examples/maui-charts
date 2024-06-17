@@ -1,7 +1,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts"
-             xmlns:dx="clr-namespace:DevExpress.Maui.Core;assembly=DevExpress.Maui.Core"
+             xmlns:dx="http://schemas.devexpress.com/maui"
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
              xmlns:local="clr-namespace:BarSummaryOnSelectionExample"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
@@ -13,52 +12,52 @@
     <Grid RowDefinitions="Auto,Auto,*,Auto" Padding="0">
         <Label Text="{Binding PeriodText}" HorizontalOptions="Center" Style="{StaticResource paleLabelStyle}" Margin="0,20,0,0"/>
         <Label Text="{Binding TotalReplies, StringFormat='Total: {0}'}" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center"  Margin="0,15,0,15" Grid.Row="1"/>
-        <dxc:ChartView SelectionChanged="ChartView_SelectionChanged" Rotated="True" Grid.Row="2" Margin="0,0,0,10">
-            <dxc:ChartView.AxisX>
-                <dxc:QualitativeAxisX>
-                    <dxc:QualitativeAxisX.Label>
-                        <dxc:AxisLabel>
-                            <dxc:AxisLabel.Style>
-                                <dxc:AxisLabelStyle>
-                                    <dxc:AxisLabelStyle.TextStyle>
-                                        <dxc:TextStyle Color="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" Size="13"/>
-                                    </dxc:AxisLabelStyle.TextStyle>
-                                </dxc:AxisLabelStyle>
-                            </dxc:AxisLabel.Style>
-                        </dxc:AxisLabel>
-                    </dxc:QualitativeAxisX.Label>
-                </dxc:QualitativeAxisX>
-            </dxc:ChartView.AxisX>
-            <dxc:ChartView.AxisY>
-                <dxc:NumericAxisY>
-                    <dxc:NumericAxisY.Label>
-                        <dxc:AxisLabel>
-                            <dxc:AxisLabel.Style>
-                                <dxc:AxisLabelStyle>
-                                    <dxc:AxisLabelStyle.TextStyle>
-                                        <dxc:TextStyle Color="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" Size="13"/>
-                                    </dxc:AxisLabelStyle.TextStyle>
-                                </dxc:AxisLabelStyle>
-                            </dxc:AxisLabel.Style>
-                        </dxc:AxisLabel>
-                    </dxc:NumericAxisY.Label>
-                </dxc:NumericAxisY>
-            </dxc:ChartView.AxisY>
-            <dxc:ChartView.ChartStyle>
-                <dxc:ChartStyle BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource surfaceDark}}" />
-            </dxc:ChartView.ChartStyle>
-            <dxc:ChartView.Series>
-                <dxc:BarSeries>
-                    <dxc:BarSeries.Data>
-                        <dxc:SeriesDataAdapter DataSource="{Binding Path=ComponentReplyInfos}" ArgumentDataMember="ComponentName">
-                            <dxc:SeriesDataAdapter.ValueDataMembers>
-                                <dxc:ValueDataMember Type="Value" Member="Count"/>
-                            </dxc:SeriesDataAdapter.ValueDataMembers>
-                        </dxc:SeriesDataAdapter>
-                    </dxc:BarSeries.Data>
-                    <dxc:BarSeries.PointColorizer>
-                        <dxc:ColorEachPointColorizer x:Name="col">
-                            <dxc:ColorEachPointColorizer.Palette>
+        <dx:ChartView SelectionChanged="ChartView_SelectionChanged" Rotated="True" Grid.Row="2" Margin="0,0,0,10">
+            <dx:ChartView.AxisX>
+                <dx:QualitativeAxisX>
+                    <dx:QualitativeAxisX.Label>
+                        <dx:AxisLabel>
+                            <dx:AxisLabel.Style>
+                                <dx:AxisLabelStyle>
+                                    <dx:AxisLabelStyle.TextStyle>
+                                        <dx:TextStyle Color="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" Size="13"/>
+                                    </dx:AxisLabelStyle.TextStyle>
+                                </dx:AxisLabelStyle>
+                            </dx:AxisLabel.Style>
+                        </dx:AxisLabel>
+                    </dx:QualitativeAxisX.Label>
+                </dx:QualitativeAxisX>
+            </dx:ChartView.AxisX>
+            <dx:ChartView.AxisY>
+                <dx:NumericAxisY>
+                    <dx:NumericAxisY.Label>
+                        <dx:AxisLabel>
+                            <dx:AxisLabel.Style>
+                                <dx:AxisLabelStyle>
+                                    <dx:AxisLabelStyle.TextStyle>
+                                        <dx:TextStyle Color="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" Size="13"/>
+                                    </dx:AxisLabelStyle.TextStyle>
+                                </dx:AxisLabelStyle>
+                            </dx:AxisLabel.Style>
+                        </dx:AxisLabel>
+                    </dx:NumericAxisY.Label>
+                </dx:NumericAxisY>
+            </dx:ChartView.AxisY>
+            <dx:ChartView.ChartStyle>
+                <dx:ChartStyle BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource surfaceDark}}" />
+            </dx:ChartView.ChartStyle>
+            <dx:ChartView.Series>
+                <dx:BarSeries>
+                    <dx:BarSeries.Data>
+                        <dx:SeriesDataAdapter DataSource="{Binding Path=ComponentReplyInfos}" ArgumentDataMember="ComponentName">
+                            <dx:SeriesDataAdapter.ValueDataMembers>
+                                <dx:ValueDataMember Type="Value" Member="Count"/>
+                            </dx:SeriesDataAdapter.ValueDataMembers>
+                        </dx:SeriesDataAdapter>
+                    </dx:BarSeries.Data>
+                    <dx:BarSeries.PointColorizer>
+                        <dx:ColorEachPointColorizer x:Name="col">
+                            <dx:ColorEachPointColorizer.Palette>
                                 <x:Array Type="{x:Type Color}">
                                     <Color>#FF8873bf</Color>
                                     <Color>#CF8873bf</Color>
@@ -67,12 +66,12 @@
                                     <Color>#7F8873bf</Color>
                                     <Color>#6F8873bf</Color>
                                 </x:Array>
-                            </dxc:ColorEachPointColorizer.Palette>
-                        </dxc:ColorEachPointColorizer>
-                    </dxc:BarSeries.PointColorizer>
-                </dxc:BarSeries>
-            </dxc:ChartView.Series>
-        </dxc:ChartView>
+                            </dx:ColorEachPointColorizer.Palette>
+                        </dx:ColorEachPointColorizer>
+                    </dx:BarSeries.PointColorizer>
+                </dx:BarSeries>
+            </dx:ChartView.Series>
+        </dx:ChartView>
         <Border Grid.Row="3" Background="{StaticResource panelBrush}" StrokeThickness="0">
             <dx:DXStackLayout Orientation="Vertical" Margin="30,10">
                 <Label Text="{Binding Path=SelectedComponentString}" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,5,0,0" FontSize="16"/>

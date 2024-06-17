@@ -35,19 +35,19 @@ namespace CustomPointColorizer {
                 case 1:
                 case 2:
                 default:
-                    return Color.FromHex("#5982db");
+                    return Color.FromArgb("#5982db");
                 case 3:
                 case 4:
                 case 5:
-                    return Color.FromHex("#755dd9");
+                    return Color.FromArgb("#755dd9");
                 case 6:
                 case 7:
                 case 8:
-                    return Color.FromHex("#9b57d3");
+                    return Color.FromArgb("#9b57d3");
                 case 9:
                 case 10:
                 case 11:
-                    return Color.FromHex("#92278f");
+                    return Color.FromArgb("#92278f");
             }
         }
         public ILegendItemProvider GetLegendItemProvider() {

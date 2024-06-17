@@ -1,6 +1,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts"
+             xmlns:dx="http://schemas.devexpress.com/maui"
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
              xmlns:local="clr-namespace:ValueRangeColorizer"
              ios:Page.UseSafeArea="true"
@@ -8,59 +8,59 @@
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
-    <dxc:ChartView x:Name="chart" Rotated="True">
-        <dxc:ChartView.Series>
-            <dxc:BarSeries LegendTextPattern="{}Profit from {CLV}% to {CHV}%">
-                <dxc:BarSeries.Data>
-                    <dxc:SeriesDataAdapter 
+    <dx:ChartView x:Name="chart" Rotated="True">
+        <dx:ChartView.Series>
+            <dx:BarSeries LegendTextPattern="{}Profit from {CLV}% to {CHV}%">
+                <dx:BarSeries.Data>
+                    <dx:SeriesDataAdapter 
                             DataSource="{Binding CryptocurrencyPortfolioData}"
                             ArgumentDataMember="Ticker">
-                        <dxc:ValueDataMember Type="Value" Member="Profit"/>
-                    </dxc:SeriesDataAdapter>
-                </dxc:BarSeries.Data>
+                        <dx:ValueDataMember Type="Value" Member="Profit"/>
+                    </dx:SeriesDataAdapter>
+                </dx:BarSeries.Data>
 
-                <dxc:BarSeries.Label>
-                    <dxc:BarSeriesLabel Position="Outside" 
+                <dx:BarSeries.Label>
+                    <dx:BarSeriesLabel Position="Outside" 
                                         Behavior="Cut" 
                                         TextPattern="{}{V}%"/>
-                </dxc:BarSeries.Label>
+                </dx:BarSeries.Label>
 
-                <dxc:BarSeries.PointColorizer>
-                    <dxc:ValueBandPointColorizer>
-                        <dxc:ValueBandPointColorizer.ColorStops>
-                            <dxc:ColorStop Color="Green" Value1="0" Value2="100"/>
-                            <dxc:ColorStop Color="Red" Value1="0" Value2="-100"/>
-                        </dxc:ValueBandPointColorizer.ColorStops>
-                    </dxc:ValueBandPointColorizer>
-                </dxc:BarSeries.PointColorizer>
-            </dxc:BarSeries>
-        </dxc:ChartView.Series>
+                <dx:BarSeries.PointColorizer>
+                    <dx:ValueBandPointColorizer>
+                        <dx:ValueBandPointColorizer.ColorStops>
+                            <dx:ColorStop Color="Green" Value1="0" Value2="100"/>
+                            <dx:ColorStop Color="Red" Value1="0" Value2="-100"/>
+                        </dx:ValueBandPointColorizer.ColorStops>
+                    </dx:ValueBandPointColorizer>
+                </dx:BarSeries.PointColorizer>
+            </dx:BarSeries>
+        </dx:ChartView.Series>
 
-        <dxc:ChartView.AxisX>
-            <dxc:QualitativeAxisX>
-                <dxc:QualitativeAxisX.DisplayPosition>
-                    <dxc:AxisDisplayPositionRelative
+        <dx:ChartView.AxisX>
+            <dx:QualitativeAxisX>
+                <dx:QualitativeAxisX.DisplayPosition>
+                    <dx:AxisDisplayPositionRelative
                         NumericPosition="0"
                         RelativeAxis="{Binding AxisY, Source={x:Reference chart}}"/>
-                </dxc:QualitativeAxisX.DisplayPosition>
-            </dxc:QualitativeAxisX>
-        </dxc:ChartView.AxisX>
-        <dxc:ChartView.AxisY>
-            <dxc:NumericAxisY GridAlignment="15"
+                </dx:QualitativeAxisX.DisplayPosition>
+            </dx:QualitativeAxisX>
+        </dx:ChartView.AxisX>
+        <dx:ChartView.AxisY>
+            <dx:NumericAxisY GridAlignment="15"
                               LabelTextFormatter="{local:CryptocurrencyPortfolioAxisLabelTextFormatter}">
-                <dxc:NumericAxisY.Range>
-                    <dxc:NumericRange Min="-40" Max="40"/>
-                </dxc:NumericAxisY.Range>
-                <dxc:NumericAxisY.Style>
-                    <dxc:AxisStyle MajorTickmarksVisible="True"
+                <dx:NumericAxisY.Range>
+                    <dx:NumericRange Min="-40" Max="40"/>
+                </dx:NumericAxisY.Range>
+                <dx:NumericAxisY.Style>
+                    <dx:AxisStyle MajorTickmarksVisible="True"
                                     MinorTickmarksVisible="True" />
-                </dxc:NumericAxisY.Style>
-            </dxc:NumericAxisY>
-        </dxc:ChartView.AxisY>
-        <dxc:ChartView.Legend>
-            <dxc:Legend HorizontalPosition="Center"
+                </dx:NumericAxisY.Style>
+            </dx:NumericAxisY>
+        </dx:ChartView.AxisY>
+        <dx:ChartView.Legend>
+            <dx:Legend HorizontalPosition="Center"
                         VerticalPosition="BottomOutside"
                         Orientation="LeftToRight"/>
-        </dxc:ChartView.Legend>
-    </dxc:ChartView>
+        </dx:ChartView.Legend>
+    </dx:ChartView>
 </ContentPage>

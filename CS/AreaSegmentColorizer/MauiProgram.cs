@@ -7,6 +7,7 @@ namespace AreaSegmentColorizer {
             builder
                 .UseMauiApp<App>()
                 .UseDevExpress()
+                .UseDevExpressCharts()
                 .ConfigureFonts(fonts => {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");

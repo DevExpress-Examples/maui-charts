@@ -13,6 +13,10 @@ namespace FinancialChartExample {
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
+                .UseDevExpressCharts()
+                .UseDevExpressControls()
+                .UseDevExpressCollectionView()
+                .UseDevExpressEditors()
                 .UseDevExpress(useLocalization: true)
                 .ConfigureFonts(fonts =>
                 {

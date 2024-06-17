@@ -28,9 +28,9 @@
     <MauiFont Include="Resources\Fonts\*" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
     <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-    <PackageReference Include="DevExpress.Maui.Charts" Version="23.2.*" />
+    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+    <PackageReference Include="DevExpress.Maui.Charts" Version="24.1.*" />
   </ItemGroup>
   <PropertyGroup>
     <UseInterpreter Condition="$(TargetFramework.Contains('-ios'))">True</UseInterpreter>

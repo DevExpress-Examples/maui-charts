@@ -48,11 +48,11 @@ namespace IndexBasedCustomPointColorizer {
     public class ColorizerByRegion : IIndexBasedCustomPointColorizer, ILegendItemProvider {
         private CountryStatisticsData data = new CountryStatisticsData();
         private Dictionary<string, Color> colors = new Dictionary<string, Color> {
-            {"Africa", Color.FromHex("5b9bd5")},
-            {"America",  Color.FromHex("ed7d31")},
-            {"Asia", Color.FromHex("a5a5a5")},
-            {"Australia", Color.FromHex("ffc000")},
-            {"Europe", Color.FromHex("4472c4")}
+            {"Africa", Color.FromArgb("5b9bd5")},
+            {"America",  Color.FromArgb("ed7d31")},
+            {"Asia", Color.FromArgb("a5a5a5")},
+            {"Australia", Color.FromArgb("ffc000")},
+            {"Europe", Color.FromArgb("4472c4")}
         };
         private List<string> regions = new List<string> {
             "Africa", "America", "Asia", "Australia", "Europe"

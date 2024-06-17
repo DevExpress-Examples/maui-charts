@@ -12,6 +12,7 @@ namespace SeriesLabelTextProvider {
             builder
                 .UseMauiApp<App>()
                 .UseDevExpress()
+                .UseDevExpressCharts()
                 .ConfigureFonts(fonts => {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("univia-pro-regular.ttf", "Univia-Pro");

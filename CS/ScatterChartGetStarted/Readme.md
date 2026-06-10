@@ -21,16 +21,12 @@ The following step-by-step tutorial details how to reproduce this application.
 
 ### Create a New Project
 
-1. In Visual Studio 2022, create a new .NET MAUI project. Name it *ChartViewExample*.
+In Visual Studio 2022, create a new .NET MAUI project. Name it *ChartViewExample*.
 
     > If the wizard does not suggest a template for .NET MAUI projects, you can call the following command in a CLI to create a new .NET MAUI project:
     > ```
     > dotnet new maui -n ChartViewExample
     > ```
-
-1. Install the **DevExpress.Maui.Charts** package from the DevExpress NuGet Gallery.
-
-    > DevExpress Pie Chart for .NET MAUI supports iOS and Android. The project should only contain these platforms.
 
 ### Add a Chart View to the Main Page
 
